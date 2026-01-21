@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Gradebot by Wave AI - Intelligent Grading Platform</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-white text-text-main overflow-x-hidden antialiased selection:bg-wave-cyan selection:text-white">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <div class="flex items-center gap-3">
+        <img src="/blue-logo.png" alt="Gradebot Logo" class="size-12 translate-y-0.5" style="filter: hue-rotate(10deg) saturate(1.2);" />
+        <div class="flex flex-col justify-center leading-none">
+          <span class="text-xl font-bold tracking-tight text-slate-900">Gradebot</span>
+          <span class="text-[10px] font-semibold text-wave-cyan tracking-wider uppercase">by Wave AI</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Features</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Schools</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Pricing</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:flex h-10 items-center px-4 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors" href="#">
+          Log in
+        </a>
+        <a class="h-10 px-5 bg-wave-blue hover:bg-blue-600 text-white text-sm font-bold rounded-full flex items-center justify-center transition-all shadow-md hover:shadow-lg" href="#">
+          Sign up free
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-20"></div>
+
+<!-- Hero Section -->
+<section class="relative pt-8 pb-24 lg:pt-16 lg:pb-40 overflow-hidden bg-gradient-to-b from-sky-50 to-white">
+  <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-100/70 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-100/60 blur-[100px] rounded-full -translate-x-1/3 translate-y-1/4 pointer-events-none"></div>
+  <div class="layout-container max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center gap-16">
+      <div class="flex-1 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-wave-cyan animate-pulse"></span>
+          <span class="text-xs font-semibold text-slate-600">New: Gradebot for Canvas v2.0</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-6 text-slate-900">
+          Instant Grading that <br class="hidden lg:block"/>
+          <span class="text-gradient">Holds Up to Scrutiny.</span>
+        </h1>
+        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          Every response evaluated with transparent, rubric-aligned accuracy. Resulting insights expose learning gaps and strengths, making instructional decisions faster and more confident.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <button class="h-12 px-8 bg-wave-blue hover:bg-blue-600 text-white text-base font-bold rounded-lg transition-all shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30">
+            Sign up for free
+          </button>
+          <button class="h-12 px-8 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 hover:text-slate-900 text-base font-bold rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm hover:shadow-md">
+            Schedule a Demo
+          </button>
+        </div>
+        <p class="mt-6 text-sm text-slate-500">
+          <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> All Subjects
+          <span class="mx-2">•</span>
+          <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> Transparent Methodology
+          <span class="mx-2">•</span>
+          <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> FERPA Compliant
+        </p>
+      </div>
+      <div class="flex-1 w-full max-w-[600px] lg:max-w-none perspective-[1000px]">
+        <div class="relative rounded-2xl bg-white border border-slate-200 shadow-2xl shadow-slate-200/50 overflow-hidden group transform transition-transform duration-700 hover:rotate-x-1">
+          <div class="h-10 bg-slate-50 border-b border-slate-200 flex items-center justify-between px-4">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-slate-200"></div>
+              <div class="w-3 h-3 rounded-full bg-slate-200"></div>
+              <div class="w-3 h-3 rounded-full bg-slate-200"></div>
+            </div>
+            <div class="h-5 w-40 bg-slate-200/50 rounded-full mx-auto"></div>
+          </div>
+          <img src="/images/dashboard.png" alt="Gradebot Dashboard" class="w-full h-auto" />
+        </div>
+        <div class="absolute -z-10 -bottom-10 -right-10 w-full h-full border border-slate-200 rounded-2xl bg-slate-50"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners Section -->
+<section class="py-12 border-y border-slate-100 bg-slate-50/50">
+  <div class="max-w-[1200px] mx-auto px-4">
+    <p class="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-10">Trusted by instructors at leading institutions</p>
+    <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 hover:opacity-100 transition-all duration-500 grayscale hover:grayscale-0">
+      <div class="flex items-center gap-2 text-lg font-bold text-slate-600 font-serif">
+        <span class="material-symbols-outlined text-3xl">account_balance</span> UNIVERSITY
+      </div>
+      <div class="flex items-center gap-2 text-lg font-bold text-slate-600 font-serif">
+        <span class="material-symbols-outlined text-3xl">school</span> ACADEMY
+      </div>
+      <div class="flex items-center gap-2 text-lg font-bold text-slate-600 font-serif">
+        <span class="material-symbols-outlined text-3xl">history_edu</span> COLLEGE
+      </div>
+      <div class="flex items-center gap-2 text-lg font-bold text-slate-600 font-serif">
+        <span class="material-symbols-outlined text-3xl">science</span> INSTITUTE
+      </div>
+      <div class="flex items-center gap-2 text-lg font-bold text-slate-600 font-serif">
+        <span class="material-symbols-outlined text-3xl">menu_book</span> SCHOOL
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20 max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">From Grading to Insight</h2>
+      <p class="text-slate-600 text-lg leading-relaxed">
+        Move beyond simple scores. Gradebot detects learning gaps and tracks trends across your entire class instantly, giving you actionable data.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Learning Gap Detection Card -->
+      <div class="group relative bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[140px] text-wave-blue">analytics</span>
+        </div>
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="size-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-8 text-wave-blue shadow-sm">
+            <span class="material-symbols-outlined text-3xl">monitoring</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">Learning Gap Detection</h3>
+          <p class="text-slate-600 mb-10 leading-relaxed flex-grow">
+            Identify exactly where students are struggling. Gradebot analyzes patterns across all assignments to highlight concepts that need reteaching before the exam.
+          </p>
+          <div class="mt-auto w-full h-56 bg-slate-50 rounded-xl border border-slate-100 p-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-[0.4]" style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 16px 16px;"></div>
+            <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between h-32 gap-3 z-10">
+              <div class="w-full bg-slate-200 rounded-t-sm h-[40%]"></div>
+              <div class="w-full bg-slate-300 rounded-t-sm h-[60%]"></div>
+              <div class="w-full bg-wave-blue rounded-t-sm h-[85%] relative group-hover:scale-y-105 transition-transform origin-bottom shadow-lg shadow-blue-500/20">
+                <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white border border-slate-200 text-[10px] font-bold text-slate-700 px-3 py-1.5 rounded-full shadow-md whitespace-nowrap">
+                  Needs Review
+                </div>
+              </div>
+              <div class="w-full bg-slate-300 rounded-t-sm h-[55%]"></div>
+              <div class="w-full bg-slate-200 rounded-t-sm h-[45%]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Precision Control Card -->
+      <div class="group relative bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[140px] text-wave-cyan">tune</span>
+        </div>
+        <div class="relative z-10 flex flex-col h-full">
+          <div class="size-14 rounded-2xl bg-cyan-50 flex items-center justify-center mb-8 text-wave-cyan shadow-sm">
+            <span class="material-symbols-outlined text-3xl">fact_check</span>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">Precision Control</h3>
+          <p class="text-slate-600 mb-10 leading-relaxed flex-grow">
+            Maintain full authority. The AI suggests grades and comments based on your rubric, but you have a simple "Human Override" on every single point.
+          </p>
+          <div class="mt-auto w-full bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-4 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <span class="text-sm font-semibold text-slate-600">Criterion: <span class="text-slate-900">Thesis Strength</span></span>
+              <span class="text-xs bg-green-50 text-green-700 font-medium px-2 py-1 rounded-full border border-green-100">High Confidence</span>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div class="flex-1">
+                <div class="h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-wave-cyan w-[85%]"></div>
+                </div>
+              </div>
+              <span class="text-slate-900 font-mono font-bold">8.5/10</span>
+            </div>
+            <div class="flex justify-end pt-1">
+              <button class="text-xs flex items-center gap-1.5 text-slate-500 hover:text-wave-blue transition-colors font-medium">
+                <span class="material-symbols-outlined text-[16px]">edit</span> Override Grade
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-24 bg-surface-subtle border-y border-slate-200">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-20 text-center md:text-left">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">How Gradebot Works</h2>
+      <p class="text-slate-500">A transparent workflow from submission to insight.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+      <div class="hidden lg:block absolute top-10 left-[10%] right-[25%] h-[2px] bg-slate-200 z-0 border-t border-dashed border-slate-300"></div>
+
+      <!-- Step 1 -->
+      <div class="relative z-10 flex flex-col gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md mx-auto sm:mx-0 group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">upload_file</span>
+        </div>
+        <div class="text-center sm:text-left">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 1</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Upload</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Upload assignments and rubrics. Use your own or generate one from course materials.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative z-10 flex flex-col gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md mx-auto sm:mx-0 group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">auto_fix_high</span>
+        </div>
+        <div class="text-center sm:text-left">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 2</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Grade</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">AI evaluates every submission and documents its reasoning with full transparency.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative z-10 flex flex-col gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md mx-auto sm:mx-0 group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">edit_note</span>
+        </div>
+        <div class="text-center sm:text-left">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 3</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Review & Analyze</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Edit scores and feedback with full human override. Explore trends and learning gaps across your class.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="relative z-10 flex flex-col gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md mx-auto sm:mx-0 group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">download</span>
+        </div>
+        <div class="text-center sm:text-left">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 4</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Export</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Download results or re-run grading as your course evolves.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative rounded-3xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 p-10 md:p-14 overflow-hidden shadow-soft">
+      <div class="absolute -right-12 -bottom-16 opacity-10 pointer-events-none">
+        <span class="material-symbols-outlined text-[300px] text-wave-blue">security</span>
+      </div>
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-10 relative z-10">
+        <div class="size-20 rounded-full bg-white shadow-md border border-blue-50 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-4xl text-wave-blue">lock</span>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Student Privacy, Handled.</h2>
+          <ul class="text-slate-600 max-w-2xl text-base leading-relaxed mb-6 space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
+              <span>Student work is <strong>always private</strong>.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
+              <span>Assignments are <strong>never stored or used to train AI</strong>.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
+              <span>Submissions are <strong>automatically deleted after grading</strong>.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
+              <span>Built to meet <strong>FERPA expectations from day one</strong>.</span>
+            </li>
+          </ul>
+          <div class="flex flex-wrap items-center gap-4">
+            <div class="px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm text-xs font-bold text-slate-600 uppercase tracking-wide flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm text-green-500">verified_user</span> FERPA Compliant
+            </div>
+            <div class="px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm text-xs font-bold text-slate-600 uppercase tracking-wide flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm text-green-500">checklist</span> HECVAT
+            </div>
+            <a href="#" class="text-sm font-medium text-wave-blue hover:text-blue-600 transition-colors flex items-center gap-1">
+              View our security practices
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-24 bg-surface-subtle border-t border-slate-200">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center text-slate-900 mb-16">Trusted by Educators</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-soft flex flex-col hover:-translate-y-1 transition-transform">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <p class="text-slate-600 mb-8 flex-grow leading-relaxed italic">"The rubric-aligned feedback is remarkably consistent across all submissions. I can trust the evaluations and focus my attention where it matters most."</p>
+        <div class="flex items-center gap-4">
+          <div class="size-12 rounded-full bg-slate-200 bg-cover bg-center ring-2 ring-white shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDV00BRHGmIrTLCCZ4rQtI0ScNWZJwZa43oIoDjofI0WIIxXDfpCrHgzuA-Klq_H5Ow3wg_z2ACOVHTfAnm00jTjfWyRuHJZm0aWUK3K-RGLgDcjVj4fmXlvvPeO8tNqVikVEYMm8Q6jwfku5oVKlccVFJNYzPLsnHXJvJOdqt7XBj1Q8BN6nSvlAt1HNFGIodrHN_f_TCjlXBPd97HFGPO6KSodlhJS-iaboziMuc-fTAFFNqC1RLvN6UZJ-tQWwAOlGWmPNZUBL7e');"></div>
+          <div>
+            <div class="text-sm font-bold text-slate-900">Sarah Jenkins</div>
+            <div class="text-xs text-slate-500 font-medium">History Professor, NYU</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-soft flex flex-col hover:-translate-y-1 transition-transform">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <p class="text-slate-600 mb-8 flex-grow leading-relaxed italic">"The learning gap detection identified that 40% of my class missed a key concept in Week 3. I adjusted my instruction immediately based on that insight."</p>
+        <div class="flex items-center gap-4">
+          <div class="size-12 rounded-full bg-slate-200 bg-cover bg-center ring-2 ring-white shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqfWAYz4p3OQhfK8Qy2Rc15ressxfDyfERf8TOZflalMIMDNWaHf7BKTrEB1Tz9ExpdFOzQC-bDygoQIeL0dS5tC-NJIZsIbpAcF5q6V3za6shfrPYJYsRlHd6vnCggXy9Zy_h8CxJ19vzoEUpYRQbwljNtI0ZSi51AnVpJyW3LFDfIM-OZDZg4adx_TOLPrPeun4P9pqFwVL_2qMdx8qkEj4T--7qaT53V7C_T8sMPKRko0SkCny8xmzIRg-W8Zb8hrux-oQklMy9');"></div>
+          <div>
+            <div class="text-sm font-bold text-slate-900">David Chen</div>
+            <div class="text-xs text-slate-500 font-medium">Comp Sci Lecturer, Stanford</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-soft flex flex-col hover:-translate-y-1 transition-transform">
+        <div class="flex gap-1 text-yellow-400 mb-6">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <p class="text-slate-600 mb-8 flex-grow leading-relaxed italic">"The transparent reasoning behind each grade gives me confidence in the results. I can override any decision, but rarely need to."</p>
+        <div class="flex items-center gap-4">
+          <div class="size-12 rounded-full bg-slate-200 bg-cover bg-center ring-2 ring-white shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIq9SFxsaYoiNg-PhM6RQ0ocNoTQi3h5bXPcUBmEyuXBeLZRdGrp_rUL4x_4HQCyQTtrjOt7lwS6ke_K7Z07X_ivUJc1FUtm0tylq04yj-2_E1oii8I--GgNjqmQF1CaNmFv9ebibA6_1YB-0zlYRZrfQJNCqbbJHgF9HiBVEsCB-mPJdAVzXeAKVvqJ8fv2zw_hn5-YWW9CC78sFaUX-hLqi1zV0dTm-foCZNA-USEGz-N2NgogkNLFaa37SoGqvNoB0NhGa4PW7Y');"></div>
+          <div>
+            <div class="text-sm font-bold text-slate-900">Elena Rodriguez</div>
+            <div class="text-xs text-slate-500 font-medium">High School English Teacher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-28 relative overflow-hidden bg-white">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-blue-100/60 to-cyan-100/60 rounded-full blur-[100px] pointer-events-none opacity-80"></div>
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Spend Less Time Grading.<br/><span class="text-wave-blue">Get More From It.</span></h2>
+    <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Accurate, transparent grading with actionable insights for your classroom.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button class="h-14 px-10 bg-wave-blue hover:bg-blue-600 text-white text-lg font-bold rounded-full transition-all shadow-lg hover:shadow-xl shadow-blue-500/25">
+        Sign up for free
+      </button>
+      <button class="h-14 px-10 bg-white border border-slate-200 hover:border-slate-400 text-slate-800 text-lg font-bold rounded-full transition-all shadow-sm hover:shadow-md">
+        Book a Demo
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-16">
+      <div class="col-span-2 lg:col-span-2">
+        <div class="flex items-center gap-2 mb-6">
+          <img src="/blue-logo.png" alt="Gradebot Logo" class="size-8" style="filter: brightness(0) invert(1);" />
+          <span class="text-xl font-bold">Gradebot</span>
+        </div>
+        <p class="text-slate-400 text-sm max-w-xs mb-8 leading-relaxed">
+          The AI-powered grading assistant that gives teachers superpowers. Accurate, secure, and insightful.
+        </p>
+        <div class="flex gap-5">
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Product</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Features</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Integrations</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Pricing</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Company</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">About Us</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Careers</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Blog</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">FERPA Statement</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500 text-sm">© 2024 Wave AI Inc. All rights reserved.</p>
+      <div class="flex gap-6 text-sm text-slate-500">
+        <span>Made for teachers with ❤️</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
