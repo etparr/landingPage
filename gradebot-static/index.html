@@ -25,9 +25,11 @@
         </div>
       </div>
       <div class="hidden md:flex items-center gap-8">
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Features</a>
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Schools</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Home</a>
         <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Pricing</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Getting Started</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Methodology</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">About Us</a>
       </div>
       <div class="flex items-center gap-3">
         <a class="hidden sm:flex h-10 items-center px-4 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors" href="#">
@@ -194,6 +196,289 @@
   </div>
 </section>
 
+<!-- Grade All Subjects Section -->
+<section class="py-24 bg-white border-t border-slate-100">
+  <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-12 max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Grade All Subjects</h2>
+      <p class="text-slate-600 text-lg leading-relaxed">
+        From variable-length written responses to fixed-template problem sets. Gradebot adapts to your discipline.
+      </p>
+    </div>
+
+    <!-- Subject Tabs -->
+    <div class="mb-8">
+      <div class="flex flex-wrap justify-center gap-1 border-b border-slate-200">
+        <button class="subject-tab active" data-subject="cs">
+          <span class="material-symbols-outlined text-xl">code</span>
+          <span class="tab-label">Computer Science</span>
+        </button>
+        <button class="subject-tab" data-subject="physics">
+          <span class="material-symbols-outlined text-xl">science</span>
+          <span class="tab-label">Physics</span>
+        </button>
+        <button class="subject-tab" data-subject="math">
+          <span class="material-symbols-outlined text-xl">calculate</span>
+          <span class="tab-label">Math</span>
+        </button>
+        <button class="subject-tab" data-subject="chemistry">
+          <span class="material-symbols-outlined text-xl">experiment</span>
+          <span class="tab-label">Chemistry</span>
+        </button>
+        <button class="subject-tab" data-subject="biology">
+          <span class="material-symbols-outlined text-xl">genetics</span>
+          <span class="tab-label">Biology</span>
+        </button>
+        <button class="subject-tab" data-subject="engineering">
+          <span class="material-symbols-outlined text-xl">precision_manufacturing</span>
+          <span class="tab-label">Engineering</span>
+        </button>
+        <button class="subject-tab" data-subject="economics">
+          <span class="material-symbols-outlined text-xl">trending_up</span>
+          <span class="tab-label">Economics</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Content Area - Gradebot App Style -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-xl overflow-hidden border border-gray-200 shadow-lg bg-white">
+
+      <!-- Left Panel: Submission Document -->
+      <div class="review-panel border-r border-gray-200">
+        <!-- Header -->
+        <div class="review-panel-header">
+          <span class="font-semibold text-gray-900">Submission Document</span>
+          <button class="text-gray-400 hover:text-gray-600">
+            <span class="material-symbols-outlined text-xl">fullscreen</span>
+          </button>
+        </div>
+        <!-- Page Controls -->
+        <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200 bg-white">
+          <div class="flex items-center gap-2">
+            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+            <div class="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded text-sm">
+              <span class="font-medium text-gray-700">1</span>
+              <span class="text-gray-400">/ 18</span>
+            </div>
+            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+          </div>
+          <div class="flex items-center gap-2">
+            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">remove</span></button>
+            <span class="text-sm text-gray-600">100%</span>
+            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">add</span></button>
+          </div>
+        </div>
+        <!-- Document Content -->
+        <div class="p-6 bg-gray-50 min-h-[500px] flex items-center justify-center">
+          <!-- Computer Science Content -->
+          <div class="subject-content active w-full" id="content-cs">
+            <div class="bg-slate-900 rounded-lg p-6 font-mono text-sm text-green-400 max-w-md mx-auto shadow-lg">
+              <div class="text-slate-500 mb-2"># Binary Search Implementation</div>
+              <div><span class="text-blue-400">def</span> <span class="text-yellow-300">binary_search</span>(arr, target):</div>
+              <div class="pl-4">left, right = 0, len(arr) - 1</div>
+              <div class="pl-4"><span class="text-blue-400">while</span> left &lt;= right:</div>
+              <div class="pl-8">mid = (left + right) // 2</div>
+              <div class="pl-8"><span class="text-blue-400">if</span> arr[mid] == target:</div>
+              <div class="pl-12"><span class="text-blue-400">return</span> mid</div>
+              <div class="pl-8"><span class="text-blue-400">elif</span> arr[mid] &lt; target:</div>
+              <div class="pl-12">left = mid + 1</div>
+              <div class="pl-8"><span class="text-blue-400">else</span>:</div>
+              <div class="pl-12">right = mid - 1</div>
+              <div class="pl-4"><span class="text-blue-400">return</span> -1</div>
+            </div>
+          </div>
+
+          <!-- Physics Content -->
+          <div class="subject-content w-full" id="content-physics">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">Problem: Projectile Motion</div>
+              <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm text-gray-600 italic">
+                A ball is thrown at 20 m/s at 45 degrees. Find maximum height.
+              </div>
+              <div class="space-y-2 text-gray-700 font-mono text-sm">
+                <p>v₀ = 20 m/s, θ = 45°</p>
+                <p>v₀y = v₀ sin(θ) = 20 × sin(45°) = 14.14 m/s</p>
+                <p>At max height: vy = 0</p>
+                <p>h = v₀y² / (2g) = (14.14)² / (2 × 9.8)</p>
+                <p class="font-semibold text-[#008F85] text-base mt-4">h = 10.2 m</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Math Content -->
+          <div class="subject-content w-full" id="content-math">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">Calculus: Integration by Parts</div>
+              <div class="space-y-3 text-gray-700">
+                <p class="text-sm text-gray-500">Find: ∫ x·eˣ dx</p>
+                <p class="font-mono">Let u = x, dv = eˣ dx</p>
+                <p class="font-mono">Then du = dx, v = eˣ</p>
+                <p class="font-mono mt-4">∫ u dv = uv - ∫ v du</p>
+                <p class="font-mono">= x·eˣ - ∫ eˣ dx</p>
+                <p class="font-mono">= x·eˣ - eˣ + C</p>
+                <p class="font-semibold text-[#008F85] mt-4">= eˣ(x - 1) + C</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chemistry Content -->
+          <div class="subject-content w-full" id="content-chemistry">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">Balancing Redox Reactions</div>
+              <div class="space-y-3 text-gray-700 text-sm">
+                <p class="text-gray-500">Balance: MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺ (acidic)</p>
+                <div class="bg-gray-50 rounded p-3 mt-3 font-mono text-xs">
+                  <p>Oxidation: Fe²⁺ → Fe³⁺ + e⁻ (×5)</p>
+                  <p>Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O</p>
+                </div>
+                <p class="font-semibold text-[#008F85] mt-4">
+                  MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Biology Content -->
+          <div class="subject-content w-full" id="content-biology">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">DNA Replication Essay</div>
+              <div class="text-gray-600 text-sm leading-relaxed">
+                <p class="mb-3">DNA replication is a semi-conservative process where each strand serves as a template...</p>
+                <p class="mb-3">The enzyme <span class="bg-yellow-100 px-1 rounded">helicase</span> unwinds the double helix at the replication fork. <span class="bg-yellow-100 px-1 rounded">Primase</span> synthesizes RNA primers...</p>
+                <p class="mb-3"><span class="bg-yellow-100 px-1 rounded">DNA polymerase III</span> adds nucleotides in the 5' to 3' direction.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engineering Content -->
+          <div class="subject-content w-full" id="content-engineering">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">Structural Analysis: Beam Deflection</div>
+              <div class="space-y-3 text-gray-700 text-sm">
+                <p class="text-gray-500">Simply supported beam, point load P at center</p>
+                <div class="bg-gray-100 rounded-lg p-4 my-3 text-center font-mono text-xs">
+                  <p>L = 4m, P = 10kN, E = 200GPa, I = 8×10⁻⁵ m⁴</p>
+                </div>
+                <p class="font-mono">δ_max = PL³ / (48EI)</p>
+                <p class="font-mono text-xs">= (10×10³)(4)³ / (48 × 200×10⁹ × 8×10⁻⁵)</p>
+                <p class="font-semibold text-[#008F85] mt-4">δ_max = 0.83 mm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Economics Content -->
+          <div class="subject-content w-full" id="content-economics">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
+              <div class="text-gray-800 font-medium mb-4">Supply & Demand Analysis</div>
+              <div class="text-gray-600 text-sm leading-relaxed">
+                <p class="mb-3 font-mono">Given: Qd = 100 - 2P and Qs = 20 + 3P</p>
+                <p class="mb-2">At equilibrium: Qd = Qs</p>
+                <p class="mb-2 font-mono">100 - 2P = 20 + 3P</p>
+                <p class="mb-2 font-mono">80 = 5P</p>
+                <p class="font-semibold text-[#008F85] mb-4">P* = $16, Q* = 68 units</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: Grading Results -->
+      <div class="review-panel bg-white">
+        <!-- Header with tabs -->
+        <div class="review-panel-header">
+          <div class="flex items-center gap-4">
+            <span class="font-semibold text-gray-900">Grading Results</span>
+            <div class="flex bg-gray-100 rounded-lg p-1">
+              <button class="results-tab active">Results</button>
+              <button class="results-tab">Rubric</button>
+            </div>
+          </div>
+          <button class="text-gray-400 hover:text-gray-600">
+            <span class="material-symbols-outlined text-xl">fullscreen</span>
+          </button>
+        </div>
+
+        <!-- Grading Content -->
+        <div class="p-5 overflow-y-auto" style="max-height: 560px;">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Question Breakdown</h3>
+
+          <!-- Question Summary Card -->
+          <div class="bg-white rounded-lg border border-gray-200 p-4 mb-4">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">QUESTION 1</div>
+                <p class="text-gray-900 font-medium mb-1 question-title">The student presents a well-rounded and mostly original idea t...</p>
+                <span class="text-xs text-gray-500 criteria-count">5 criteria</span>
+              </div>
+              <div class="text-right ml-4">
+                <div class="score-display warning text-lg question-score">7.4 / 10.0</div>
+                <div class="text-xs text-gray-500 question-percent">74.0%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overall Assessment -->
+          <div class="bg-[#E8F5F4] border border-[#008F85]/20 rounded-lg p-4 mb-4">
+            <div class="text-sm font-semibold text-[#008F85] mb-2">Overall Question Assessment</div>
+            <p class="text-sm text-gray-700 leading-relaxed overall-assessment">
+              Value proposition is clear but could be more compelling with stronger emphasis on unique benefits and measurable outcomes. Overall, the response demonstrates good understanding and alignment with the problem but leaves room for deeper elaboration and stronger differentiation.
+            </p>
+          </div>
+
+          <!-- Criterion Cards -->
+          <div class="space-y-4" id="criterion-cards">
+            <!-- Criterion 1 -->
+            <div class="criterion-card">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">CRITERION 1</div>
+                  <h4 class="font-medium text-gray-900 criterion-name">Originality of idea</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="flex items-center border border-gray-300 rounded px-2 py-1 bg-white">
+                    <span class="font-semibold text-gray-900 criterion-score">7</span>
+                    <span class="text-gray-400 mx-1">/</span>
+                    <span class="text-gray-600">10</span>
+                  </div>
+                  <span class="text-xs text-gray-500 criterion-percent">70.0%</span>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="text-xs font-semibold text-gray-600 mb-1">Rationale:</div>
+                <p class="text-sm text-gray-700 leading-relaxed criterion-rationale">
+                  The idea demonstrates clear originality with novel elements such as the use of a proprietary multi-agent AI grading engine and integration with LMS platforms. It differentiates itself by addressing educator burnout and fairness in grading, which are important but somewhat...
+                </p>
+              </div>
+
+              <div>
+                <div class="text-xs font-semibold text-green-700 mb-2">Strengths:</div>
+                <ul class="space-y-2 criterion-strengths">
+                  <li class="text-sm text-gray-700 flex items-start gap-2">
+                    <svg class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Incorporates proprietary multi-agent AI for grading.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back to Summary Button -->
+          <div class="mt-6 flex justify-center">
+            <button class="flex items-center gap-2 px-6 py-2.5 bg-[#008F85] hover:bg-[#007A71] text-white font-medium rounded-lg transition-colors">
+              <span class="material-symbols-outlined text-lg">arrow_back</span>
+              Back to Summary
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- How It Works Section -->
 <section class="py-24 bg-surface-subtle border-y border-slate-200">
   <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -267,23 +552,23 @@
           <span class="material-symbols-outlined text-4xl text-wave-blue">lock</span>
         </div>
         <div class="flex-1">
-          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Student Privacy, Handled.</h2>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Built for Student Privacy and Compliance</h2>
           <ul class="text-slate-600 max-w-2xl text-base leading-relaxed mb-6 space-y-3">
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
-              <span>Student work is <strong>always private</strong>.</span>
+              <span>Student work remains <strong>private and institution-controlled</strong>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
-              <span>Assignments are <strong>never stored or used to train AI</strong>.</span>
+              <span>Submissions are <strong>not retained, stored, or used to train AI models</strong>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
-              <span>Submissions are <strong>automatically deleted after grading</strong>.</span>
+              <span>Designed to align with <strong>FERPA requirements from day one</strong>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-green-500 text-lg mt-0.5">check_circle</span>
-              <span>Built to meet <strong>FERPA expectations from day one</strong>.</span>
+              <span>Student data is <strong>not shared, sold, or disclosed to third parties</strong>.</span>
             </li>
           </ul>
           <div class="flex flex-wrap items-center gap-4">
@@ -440,6 +725,177 @@
     </div>
   </div>
 </footer>
+
+<!-- Subject Tab Switching Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.subject-tab');
+    const contents = document.querySelectorAll('.subject-content');
+
+    // Grading data for each subject (matching Gradebot app style)
+    const gradingData = {
+      cs: {
+        questionTitle: 'The student implements a correct binary search algorithm with proper edge case handling...',
+        criteriaCount: 5,
+        totalScore: 7.4,
+        maxScore: 10.0,
+        overallAssessment: 'The implementation demonstrates solid understanding of the binary search algorithm. Code quality is good with minor improvements needed in documentation and edge case handling.',
+        criterion: {
+          name: 'Code Correctness',
+          score: 7,
+          maxScore: 10,
+          rationale: 'The algorithm correctly implements binary search with proper handling of the base case. The comparison logic is accurate and the return values are appropriate for both found and not-found cases.',
+          strengths: ['Correct implementation of the binary search algorithm.', 'Proper use of integer division to avoid overflow.']
+        }
+      },
+      physics: {
+        questionTitle: 'The student correctly applies kinematic equations to solve the projectile motion problem...',
+        criteriaCount: 4,
+        totalScore: 9.0,
+        maxScore: 10.0,
+        overallAssessment: 'Excellent work showing strong understanding of projectile motion concepts. The solution methodology is clear and calculations are accurate.',
+        criterion: {
+          name: 'Problem Setup',
+          score: 9,
+          maxScore: 10,
+          rationale: 'The student correctly identifies the relevant kinematic equations and properly decomposes the initial velocity into vertical and horizontal components.',
+          strengths: ['Clear identification of given values and unknowns.', 'Correct application of trigonometric relationships.']
+        }
+      },
+      math: {
+        questionTitle: 'The student demonstrates mastery of integration by parts technique with clear methodology...',
+        criteriaCount: 3,
+        totalScore: 10.0,
+        maxScore: 10.0,
+        overallAssessment: 'Perfect execution of the integration by parts technique. All steps are shown clearly with correct mathematical notation.',
+        criterion: {
+          name: 'Method Selection',
+          score: 10,
+          maxScore: 10,
+          rationale: 'Excellent choice of u and dv for the integration by parts formula. The selection minimizes complexity and leads to a straightforward solution.',
+          strengths: ['Optimal choice of substitution variables.', 'Clear step-by-step solution process.']
+        }
+      },
+      chemistry: {
+        questionTitle: 'The student balances the redox reaction using the half-reaction method in acidic solution...',
+        criteriaCount: 4,
+        totalScore: 8.0,
+        maxScore: 10.0,
+        overallAssessment: 'Good understanding of redox chemistry and the half-reaction balancing method. Minor improvements could be made in explaining the electron transfer process.',
+        criterion: {
+          name: 'Half-Reaction Balancing',
+          score: 8,
+          maxScore: 10,
+          rationale: 'The oxidation and reduction half-reactions are correctly identified and balanced. The electron count matches properly for the overall reaction.',
+          strengths: ['Correct identification of oxidation states.', 'Proper balancing of electrons between half-reactions.']
+        }
+      },
+      biology: {
+        questionTitle: 'The student explains the DNA replication process with accurate identification of key enzymes...',
+        criteriaCount: 5,
+        totalScore: 7.5,
+        maxScore: 10.0,
+        overallAssessment: 'Good understanding of DNA replication fundamentals. The essay correctly identifies major enzymes but could provide more detail on the coordination between leading and lagging strand synthesis.',
+        criterion: {
+          name: 'Key Term Usage',
+          score: 7,
+          maxScore: 10,
+          rationale: 'The student correctly identifies and uses key terms like helicase, primase, and DNA polymerase III. The explanation of their roles is accurate but could be more detailed.',
+          strengths: ['Accurate identification of replication enzymes.', 'Correct description of semi-conservative replication.']
+        }
+      },
+      engineering: {
+        questionTitle: 'The student applies beam deflection formulas correctly with proper unit conversion...',
+        criteriaCount: 4,
+        totalScore: 9.5,
+        maxScore: 10.0,
+        overallAssessment: 'Excellent structural analysis work. The student demonstrates strong command of beam theory and careful attention to units throughout the calculation.',
+        criterion: {
+          name: 'Formula Application',
+          score: 10,
+          maxScore: 10,
+          rationale: 'The correct deflection formula for a simply supported beam with a central point load is selected and applied. All parameters are correctly substituted.',
+          strengths: ['Correct formula selection for the loading condition.', 'Careful attention to unit consistency.']
+        }
+      },
+      economics: {
+        questionTitle: 'The student correctly solves for market equilibrium and calculates consumer surplus...',
+        criteriaCount: 4,
+        totalScore: 8.5,
+        maxScore: 10.0,
+        overallAssessment: 'Strong understanding of supply and demand equilibrium concepts. The equilibrium calculation is correct, and the consumer surplus formula is properly applied.',
+        criterion: {
+          name: 'Equilibrium Analysis',
+          score: 9,
+          maxScore: 10,
+          rationale: 'The student correctly sets Qd equal to Qs and solves for the equilibrium price. The equilibrium quantity is then correctly calculated.',
+          strengths: ['Correct setup of the equilibrium condition.', 'Accurate algebraic manipulation.']
+        }
+      }
+    };
+
+    function getScoreClass(score, maxScore) {
+      var percent = (score / maxScore) * 100;
+      if (percent >= 80) return 'success';
+      if (percent >= 60) return 'warning';
+      return 'error';
+    }
+
+    function updateGradingPanel(subject) {
+      var data = gradingData[subject];
+      var percent = ((data.totalScore / data.maxScore) * 100).toFixed(1);
+      var scoreClass = getScoreClass(data.totalScore, data.maxScore);
+      var criterionPercent = ((data.criterion.score / data.criterion.maxScore) * 100).toFixed(1);
+
+      // Update question summary
+      document.querySelector('.question-title').textContent = data.questionTitle;
+      document.querySelector('.criteria-count').textContent = data.criteriaCount + ' criteria';
+
+      var questionScore = document.querySelector('.question-score');
+      questionScore.textContent = data.totalScore.toFixed(1) + ' / ' + data.maxScore.toFixed(1);
+      questionScore.className = 'score-display ' + scoreClass + ' text-lg';
+
+      document.querySelector('.question-percent').textContent = percent + '%';
+
+      // Update overall assessment
+      document.querySelector('.overall-assessment').textContent = data.overallAssessment;
+
+      // Update criterion card
+      document.querySelector('.criterion-name').textContent = data.criterion.name;
+      document.querySelector('.criterion-score').textContent = data.criterion.score;
+      document.querySelector('.criterion-percent').textContent = criterionPercent + '%';
+      document.querySelector('.criterion-rationale').textContent = data.criterion.rationale;
+
+      // Update strengths
+      var strengthsHtml = data.criterion.strengths.map(function(strength) {
+        return '<li class="text-sm text-gray-700 flex items-start gap-2">' +
+          '<svg class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">' +
+            '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />' +
+          '</svg>' +
+          '<span>' + strength + '</span>' +
+        '</li>';
+      }).join('');
+      document.querySelector('.criterion-strengths').innerHTML = strengthsHtml;
+    }
+
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var subject = this.dataset.subject;
+
+        // Update active tab
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+
+        // Update visible content
+        contents.forEach(function(c) { c.classList.remove('active'); });
+        document.getElementById('content-' + subject).classList.add('active');
+
+        // Update grading panel
+        updateGradingPanel(subject);
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

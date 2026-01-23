@@ -10,6 +10,15 @@
   --color-text-main: #0f172a;
   --color-text-muted: #64748b;
 
+  /* Gradebot Design System */
+  --color-gradebot-teal: #008F85;
+  --color-gradebot-dark: #005C56;
+  --color-gradebot-light: #E8F5F4;
+  --color-gradebot-lighter: #F2FAFA;
+  --color-score-success: #3A8B5A;
+  --color-score-warning: #C28A2E;
+  --color-score-error: #C04A4A;
+
   --font-display: "Lexend", sans-serif;
   --font-body: "Inter", sans-serif;
 
@@ -49,4 +58,185 @@ h6 {
 
 .bg-subtle-gradient {
   background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+
+/* Subject Tabs */
+.subject-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.subject-tab:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.subject-tab.active {
+  color: #006fee;
+  border-bottom-color: #006fee;
+}
+
+.subject-tab .tab-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .subject-tab .tab-label {
+    display: inline;
+  }
+}
+
+/* Assignment Type Toggle */
+.assignment-type-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.assignment-type-btn:hover {
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+/* Subject Content Panels */
+.subject-content {
+  display: none;
+}
+
+.subject-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Rubric Item Hover Effect */
+.rubric-item {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  transition: background 0.2s ease;
+}
+
+.rubric-item:hover {
+  background: white;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .subject-tab {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .assignment-type-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Gradebot Review Panel Styles */
+.review-panel {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.review-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.criterion-card {
+  position: relative;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.25rem 1rem 1.25rem 1.25rem;
+  overflow: hidden;
+}
+
+.criterion-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #3A8B5A;
+  opacity: 0.7;
+}
+
+.criterion-card.warning::before {
+  background: #C28A2E;
+}
+
+.criterion-card.error::before {
+  background: #C04A4A;
+}
+
+.results-tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.results-tab.active {
+  color: #008F85;
+  background: white;
+  border-radius: 0.375rem;
+}
+
+.score-display {
+  color: #C28A2E;
+  font-weight: 600;
+}
+
+.score-display.success {
+  color: #3A8B5A;
+}
+
+.score-display.warning {
+  color: #C28A2E;
+}
+
+.score-display.error {
+  color: #C04A4A;
 }
