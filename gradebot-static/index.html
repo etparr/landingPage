@@ -17,18 +17,18 @@
 <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
   <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
-      <div class="flex items-center gap-3">
+      <a href="/landingPage/" class="flex items-center gap-3">
         <img src="/blue-logo.png" alt="Gradebot Logo" class="size-12 translate-y-0.5" style="filter: hue-rotate(10deg) saturate(1.2);" />
         <div class="flex flex-col justify-center leading-none">
           <span class="text-xl font-bold tracking-tight text-slate-900">Gradebot</span>
           <span class="text-[10px] font-semibold text-wave-cyan tracking-wider uppercase">by Wave AI</span>
         </div>
-      </div>
+      </a>
       <div class="hidden md:flex items-center gap-8">
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Home</a>
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Pricing</a>
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Getting Started</a>
-        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Methodology</a>
+        <a class="text-sm font-medium text-wave-blue" href="/landingPage/">Home</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="/landingPage/pricing.html">Pricing</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="/landingPage/getting-started.html">Getting Started</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Benchmarks</a>
         <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">About Us</a>
       </div>
       <div class="flex items-center gap-3">
@@ -71,7 +71,7 @@
         <p class="mt-6 text-sm text-slate-500">
           <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> All Subjects
           <span class="mx-2">•</span>
-          <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> Transparent Methodology
+          <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> Transparent Benchmarks
           <span class="mx-2">•</span>
           <span class="material-symbols-outlined align-middle text-sm text-green-500 mr-1">check</span> FERPA Compliant
         </p>
@@ -196,43 +196,43 @@
   </div>
 </section>
 
-<!-- Grade All Subjects Section -->
+<!-- Grading Demo Section -->
 <section class="py-24 bg-white border-t border-slate-100">
   <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
     <div class="text-center mb-12 max-w-3xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Grade All Subjects</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Works Across Every Subject</h2>
       <p class="text-slate-600 text-lg leading-relaxed">
-        From variable-length written responses to fixed-template problem sets. Gradebot adapts to your discipline.
+        From essays to equations, Gradebot understands your rubric and delivers consistent, criterion-based feedback.
       </p>
     </div>
 
     <!-- Subject Tabs -->
     <div class="mb-8">
       <div class="flex flex-wrap justify-center gap-1 border-b border-slate-200">
-        <button class="subject-tab active" data-subject="cs">
-          <span class="material-symbols-outlined text-xl">code</span>
-          <span class="tab-label">Computer Science</span>
-        </button>
-        <button class="subject-tab" data-subject="physics">
-          <span class="material-symbols-outlined text-xl">science</span>
-          <span class="tab-label">Physics</span>
+        <button class="subject-tab active" data-subject="english">
+          <span class="material-symbols-outlined text-xl">menu_book</span>
+          <span class="tab-label">English</span>
         </button>
         <button class="subject-tab" data-subject="math">
           <span class="material-symbols-outlined text-xl">calculate</span>
           <span class="tab-label">Math</span>
         </button>
-        <button class="subject-tab" data-subject="chemistry">
-          <span class="material-symbols-outlined text-xl">experiment</span>
-          <span class="tab-label">Chemistry</span>
-        </button>
         <button class="subject-tab" data-subject="biology">
           <span class="material-symbols-outlined text-xl">genetics</span>
           <span class="tab-label">Biology</span>
         </button>
-        <button class="subject-tab" data-subject="engineering">
-          <span class="material-symbols-outlined text-xl">precision_manufacturing</span>
-          <span class="tab-label">Engineering</span>
+        <button class="subject-tab" data-subject="chemistry">
+          <span class="material-symbols-outlined text-xl">experiment</span>
+          <span class="tab-label">Chemistry</span>
+        </button>
+        <button class="subject-tab" data-subject="physics">
+          <span class="material-symbols-outlined text-xl">science</span>
+          <span class="tab-label">Physics</span>
+        </button>
+        <button class="subject-tab" data-subject="cs">
+          <span class="material-symbols-outlined text-xl">code</span>
+          <span class="tab-label">Computer Science</span>
         </button>
         <button class="subject-tab" data-subject="economics">
           <span class="material-symbols-outlined text-xl">trending_up</span>
@@ -241,145 +241,53 @@
       </div>
     </div>
 
+    <!-- Education Level Sub-tabs -->
+    <div class="flex justify-center mb-6">
+      <div class="inline-flex bg-gray-100 rounded-lg p-1">
+        <button class="level-tab active" data-level="elementary">
+          <span class="material-symbols-outlined text-sm">child_care</span>
+          Elementary
+        </button>
+        <button class="level-tab" data-level="highschool">
+          <span class="material-symbols-outlined text-sm">school</span>
+          High School
+        </button>
+        <button class="level-tab" data-level="university">
+          <span class="material-symbols-outlined text-sm">account_balance</span>
+          University
+        </button>
+      </div>
+    </div>
+
     <!-- Content Area - Gradebot App Style -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-xl overflow-hidden border border-gray-200 shadow-lg bg-white">
 
-      <!-- Left Panel: Submission Document -->
-      <div class="review-panel border-r border-gray-200">
+      <!-- Left Panel: Submission Document (PDF Viewer) -->
+      <div class="review-panel border-r border-gray-200 flex flex-col">
         <!-- Header -->
-        <div class="review-panel-header">
-          <span class="font-semibold text-gray-900">Submission Document</span>
-          <button class="text-gray-400 hover:text-gray-600">
-            <span class="material-symbols-outlined text-xl">fullscreen</span>
-          </button>
-        </div>
-        <!-- Page Controls -->
-        <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200 bg-white">
+        <div class="review-panel-header flex-shrink-0">
           <div class="flex items-center gap-2">
-            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
-            <div class="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded text-sm">
-              <span class="font-medium text-gray-700">1</span>
-              <span class="text-gray-400">/ 18</span>
-            </div>
-            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+            <span class="material-symbols-outlined text-gray-500">description</span>
+            <span class="font-semibold text-gray-900">Submission Document</span>
           </div>
-          <div class="flex items-center gap-2">
-            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">remove</span></button>
-            <span class="text-sm text-gray-600">100%</span>
-            <button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-lg">add</span></button>
+          <div class="flex items-center gap-1">
+            <button class="p-1 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded">
+              <span class="material-symbols-outlined text-lg">download</span>
+            </button>
+            <button class="p-1 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded">
+              <span class="material-symbols-outlined text-lg">fullscreen</span>
+            </button>
           </div>
         </div>
-        <!-- Document Content -->
-        <div class="p-6 bg-gray-50 min-h-[500px] flex items-center justify-center">
-          <!-- Computer Science Content -->
-          <div class="subject-content active w-full" id="content-cs">
-            <div class="bg-slate-900 rounded-lg p-6 font-mono text-sm text-green-400 max-w-md mx-auto shadow-lg">
-              <div class="text-slate-500 mb-2"># Binary Search Implementation</div>
-              <div><span class="text-blue-400">def</span> <span class="text-yellow-300">binary_search</span>(arr, target):</div>
-              <div class="pl-4">left, right = 0, len(arr) - 1</div>
-              <div class="pl-4"><span class="text-blue-400">while</span> left &lt;= right:</div>
-              <div class="pl-8">mid = (left + right) // 2</div>
-              <div class="pl-8"><span class="text-blue-400">if</span> arr[mid] == target:</div>
-              <div class="pl-12"><span class="text-blue-400">return</span> mid</div>
-              <div class="pl-8"><span class="text-blue-400">elif</span> arr[mid] &lt; target:</div>
-              <div class="pl-12">left = mid + 1</div>
-              <div class="pl-8"><span class="text-blue-400">else</span>:</div>
-              <div class="pl-12">right = mid - 1</div>
-              <div class="pl-4"><span class="text-blue-400">return</span> -1</div>
-            </div>
-          </div>
-
-          <!-- Physics Content -->
-          <div class="subject-content w-full" id="content-physics">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">Problem: Projectile Motion</div>
-              <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm text-gray-600 italic">
-                A ball is thrown at 20 m/s at 45 degrees. Find maximum height.
-              </div>
-              <div class="space-y-2 text-gray-700 font-mono text-sm">
-                <p>v₀ = 20 m/s, θ = 45°</p>
-                <p>v₀y = v₀ sin(θ) = 20 × sin(45°) = 14.14 m/s</p>
-                <p>At max height: vy = 0</p>
-                <p>h = v₀y² / (2g) = (14.14)² / (2 × 9.8)</p>
-                <p class="font-semibold text-[#008F85] text-base mt-4">h = 10.2 m</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Math Content -->
-          <div class="subject-content w-full" id="content-math">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">Calculus: Integration by Parts</div>
-              <div class="space-y-3 text-gray-700">
-                <p class="text-sm text-gray-500">Find: ∫ x·eˣ dx</p>
-                <p class="font-mono">Let u = x, dv = eˣ dx</p>
-                <p class="font-mono">Then du = dx, v = eˣ</p>
-                <p class="font-mono mt-4">∫ u dv = uv - ∫ v du</p>
-                <p class="font-mono">= x·eˣ - ∫ eˣ dx</p>
-                <p class="font-mono">= x·eˣ - eˣ + C</p>
-                <p class="font-semibold text-[#008F85] mt-4">= eˣ(x - 1) + C</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Chemistry Content -->
-          <div class="subject-content w-full" id="content-chemistry">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">Balancing Redox Reactions</div>
-              <div class="space-y-3 text-gray-700 text-sm">
-                <p class="text-gray-500">Balance: MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺ (acidic)</p>
-                <div class="bg-gray-50 rounded p-3 mt-3 font-mono text-xs">
-                  <p>Oxidation: Fe²⁺ → Fe³⁺ + e⁻ (×5)</p>
-                  <p>Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O</p>
-                </div>
-                <p class="font-semibold text-[#008F85] mt-4">
-                  MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Biology Content -->
-          <div class="subject-content w-full" id="content-biology">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">DNA Replication Essay</div>
-              <div class="text-gray-600 text-sm leading-relaxed">
-                <p class="mb-3">DNA replication is a semi-conservative process where each strand serves as a template...</p>
-                <p class="mb-3">The enzyme <span class="bg-yellow-100 px-1 rounded">helicase</span> unwinds the double helix at the replication fork. <span class="bg-yellow-100 px-1 rounded">Primase</span> synthesizes RNA primers...</p>
-                <p class="mb-3"><span class="bg-yellow-100 px-1 rounded">DNA polymerase III</span> adds nucleotides in the 5' to 3' direction.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Engineering Content -->
-          <div class="subject-content w-full" id="content-engineering">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">Structural Analysis: Beam Deflection</div>
-              <div class="space-y-3 text-gray-700 text-sm">
-                <p class="text-gray-500">Simply supported beam, point load P at center</p>
-                <div class="bg-gray-100 rounded-lg p-4 my-3 text-center font-mono text-xs">
-                  <p>L = 4m, P = 10kN, E = 200GPa, I = 8×10⁻⁵ m⁴</p>
-                </div>
-                <p class="font-mono">δ_max = PL³ / (48EI)</p>
-                <p class="font-mono text-xs">= (10×10³)(4)³ / (48 × 200×10⁹ × 8×10⁻⁵)</p>
-                <p class="font-semibold text-[#008F85] mt-4">δ_max = 0.83 mm</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Economics Content -->
-          <div class="subject-content w-full" id="content-economics">
-            <div class="bg-white rounded-lg border border-gray-200 p-6 max-w-md mx-auto shadow-lg">
-              <div class="text-gray-800 font-medium mb-4">Supply & Demand Analysis</div>
-              <div class="text-gray-600 text-sm leading-relaxed">
-                <p class="mb-3 font-mono">Given: Qd = 100 - 2P and Qs = 20 + 3P</p>
-                <p class="mb-2">At equilibrium: Qd = Qs</p>
-                <p class="mb-2 font-mono">100 - 2P = 20 + 3P</p>
-                <p class="mb-2 font-mono">80 = 5P</p>
-                <p class="font-semibold text-[#008F85] mb-4">P* = $16, Q* = 68 units</p>
-              </div>
-            </div>
-          </div>
+        <!-- PDF Viewer -->
+        <div class="flex-1 bg-gray-100 min-h-[500px]">
+          <iframe
+            id="pdf-viewer"
+            src="https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
+            class="w-full h-full border-0"
+            style="min-height: 500px;"
+            title="Submission Document"
+          ></iframe>
         </div>
       </div>
 
@@ -401,69 +309,50 @@
 
         <!-- Grading Content -->
         <div class="p-5 overflow-y-auto" style="max-height: 560px;">
+
+          <!-- Overall Score Section -->
+          <div class="bg-white rounded-lg border border-gray-200 p-5 mb-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Overall Score</h3>
+
+            <!-- 3-Column Score Grid -->
+            <div class="grid grid-cols-3 gap-4 mb-5">
+              <!-- Total Score -->
+              <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
+                <div class="text-3xl font-bold text-[#008F85] overall-total-score" style="font-variant-numeric: tabular-nums;">84.00</div>
+                <div class="text-sm text-gray-500 mt-1">Total Score</div>
+              </div>
+              <!-- Percentage -->
+              <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
+                <div class="text-3xl font-bold text-gray-600 overall-percentage" style="font-variant-numeric: tabular-nums;">84.0%</div>
+                <div class="text-sm text-gray-500 mt-1">Percentage</div>
+              </div>
+              <!-- Letter Grade -->
+              <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-100">
+                <div class="text-3xl font-bold text-[#008F85] overall-letter-grade">B</div>
+                <div class="text-sm text-gray-500 mt-1">Letter Grade</div>
+              </div>
+            </div>
+
+            <!-- Overall Feedback -->
+            <div>
+              <h4 class="font-medium text-gray-900 mb-2">Overall Feedback</h4>
+              <div class="relative">
+                <textarea
+                  class="overall-feedback w-full bg-gray-50 rounded-lg border border-gray-200 p-4 text-sm text-gray-700 leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-[#008F85] focus:border-transparent"
+                  rows="4"
+                >The submission demonstrates solid understanding of binary search and algorithmic thinking. Implementation is correct with good code structure. Areas for improvement include documentation, edge case handling, and time complexity analysis.</textarea>
+                <div class="absolute bottom-2 right-2 text-gray-400">
+                  <span class="material-symbols-outlined text-sm">edit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Question Breakdown</h3>
 
-          <!-- Question Summary Card -->
-          <div class="bg-white rounded-lg border border-gray-200 p-4 mb-4">
-            <div class="flex items-start justify-between">
-              <div class="flex-1">
-                <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">QUESTION 1</div>
-                <p class="text-gray-900 font-medium mb-1 question-title">The student presents a well-rounded and mostly original idea t...</p>
-                <span class="text-xs text-gray-500 criteria-count">5 criteria</span>
-              </div>
-              <div class="text-right ml-4">
-                <div class="score-display warning text-lg question-score">7.4 / 10.0</div>
-                <div class="text-xs text-gray-500 question-percent">74.0%</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Overall Assessment -->
-          <div class="bg-[#E8F5F4] border border-[#008F85]/20 rounded-lg p-4 mb-4">
-            <div class="text-sm font-semibold text-[#008F85] mb-2">Overall Question Assessment</div>
-            <p class="text-sm text-gray-700 leading-relaxed overall-assessment">
-              Value proposition is clear but could be more compelling with stronger emphasis on unique benefits and measurable outcomes. Overall, the response demonstrates good understanding and alignment with the problem but leaves room for deeper elaboration and stronger differentiation.
-            </p>
-          </div>
-
-          <!-- Criterion Cards -->
-          <div class="space-y-4" id="criterion-cards">
-            <!-- Criterion 1 -->
-            <div class="criterion-card">
-              <div class="flex items-start justify-between mb-3">
-                <div>
-                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">CRITERION 1</div>
-                  <h4 class="font-medium text-gray-900 criterion-name">Originality of idea</h4>
-                </div>
-                <div class="flex items-center gap-2">
-                  <div class="flex items-center border border-gray-300 rounded px-2 py-1 bg-white">
-                    <span class="font-semibold text-gray-900 criterion-score">7</span>
-                    <span class="text-gray-400 mx-1">/</span>
-                    <span class="text-gray-600">10</span>
-                  </div>
-                  <span class="text-xs text-gray-500 criterion-percent">70.0%</span>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <div class="text-xs font-semibold text-gray-600 mb-1">Rationale:</div>
-                <p class="text-sm text-gray-700 leading-relaxed criterion-rationale">
-                  The idea demonstrates clear originality with novel elements such as the use of a proprietary multi-agent AI grading engine and integration with LMS platforms. It differentiates itself by addressing educator burnout and fairness in grading, which are important but somewhat...
-                </p>
-              </div>
-
-              <div>
-                <div class="text-xs font-semibold text-green-700 mb-2">Strengths:</div>
-                <ul class="space-y-2 criterion-strengths">
-                  <li class="text-sm text-gray-700 flex items-start gap-2">
-                    <svg class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                    </svg>
-                    <span>Incorporates proprietary multi-agent AI for grading.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <!-- Question Accordions Container -->
+          <div class="space-y-3" id="question-accordions">
+            <!-- Dynamically generated by JavaScript -->
           </div>
 
           <!-- Back to Summary Button -->
@@ -658,7 +547,7 @@
 <section class="py-28 relative overflow-hidden bg-white">
   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-blue-100/60 to-cyan-100/60 rounded-full blur-[100px] pointer-events-none opacity-80"></div>
   <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Spend Less Time Grading.<br/><span class="text-wave-blue">Get More From It.</span></h2>
+    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">Spend Less Time Grading.<br/><span class="text-wave-blue">Get Actionable Insights.</span></h2>
     <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Accurate, transparent grading with actionable insights for your classroom.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <button class="h-14 px-10 bg-wave-blue hover:bg-blue-600 text-white text-lg font-bold rounded-full transition-all shadow-lg hover:shadow-xl shadow-blue-500/25">
@@ -694,7 +583,7 @@
         <ul class="flex flex-col gap-3 text-sm text-slate-400">
           <li><a class="hover:text-wave-cyan transition-colors" href="#">Features</a></li>
           <li><a class="hover:text-wave-cyan transition-colors" href="#">Integrations</a></li>
-          <li><a class="hover:text-wave-cyan transition-colors" href="#">Pricing</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="/landingPage/pricing.html">Pricing</a></li>
           <li><a class="hover:text-wave-cyan transition-colors" href="#">Changelog</a></li>
         </ul>
       </div>
@@ -730,170 +619,1863 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.subject-tab');
-    const contents = document.querySelectorAll('.subject-content');
 
-    // Grading data for each subject (matching Gradebot app style)
+    // Grading data organized by subject and education level
     const gradingData = {
-      cs: {
-        questionTitle: 'The student implements a correct binary search algorithm with proper edge case handling...',
-        criteriaCount: 5,
-        totalScore: 7.4,
-        maxScore: 10.0,
-        overallAssessment: 'The implementation demonstrates solid understanding of the binary search algorithm. Code quality is good with minor improvements needed in documentation and edge case handling.',
-        criterion: {
-          name: 'Code Correctness',
-          score: 7,
-          maxScore: 10,
-          rationale: 'The algorithm correctly implements binary search with proper handling of the base case. The comparison logic is accurate and the return values are appropriate for both found and not-found cases.',
-          strengths: ['Correct implementation of the binary search algorithm.', 'Proper use of integer division to avoid overflow.']
+      // ENGLISH - Available at all levels
+      english: {
+        elementary: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 92.00,
+            maxScore: 100.00,
+            percentage: 92.0,
+            letterGrade: 'A-',
+            feedback: 'Emma, your story "The Magical Garden" shows wonderful creativity! I loved how you gave each flower a unique personality - the shy violet and the brave sunflower were my favorites. Your story has a clear beginning, middle, and end, which shows you understand story structure well. For your next story, try adding some dialogue between your characters to make them come even more alive!'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Creative Story Writing',
+              criteriaCount: 3,
+              score: 46,
+              maxScore: 50,
+              assessment: 'A delightful story with vivid imagination! The magical garden setting is creative and the flower characters are memorable. Story structure is solid with a clear conflict (the drought) and resolution (the rain dance).',
+              criteria: [
+                {
+                  name: 'Story Structure',
+                  score: 15,
+                  maxScore: 17,
+                  rationale: 'The story opens with "Once upon a time in a garden far away..." which immediately sets the scene (page 1, paragraph 1). The problem of the wilting flowers creates tension in the middle, and the rain dance ending resolves it nicely.',
+                  strengths: ['Strong opening hook that draws readers in immediately', 'Clear problem introduced: "But one day, the sun got too hot and the flowers began to droop"', 'Satisfying resolution with the flowers working together'],
+                  improvements: ['The middle section could be expanded - what did each flower try before the rain dance?']
+                },
+                {
+                  name: 'Creativity & Details',
+                  score: 16,
+                  maxScore: 17,
+                  rationale: 'Wonderful use of imagination! Each flower has a distinct personality. The phrase "petals as soft as clouds" on page 2 shows excellent descriptive language for this grade level.',
+                  strengths: ['Creative character names like "Sunny the Sunflower" and "Violet the Shy"', 'Vivid descriptions: "danced in the moonlight" and "sparkled like diamonds"', 'Original plot idea with the rain dance ceremony'],
+                  improvements: ['Try adding what the characters said to each other using quotation marks']
+                },
+                {
+                  name: 'Word Choice',
+                  score: 15,
+                  maxScore: 16,
+                  rationale: 'Strong vocabulary for 3rd grade level. Used interesting words like "magnificent," "whispered," and "celebration" correctly throughout the story.',
+                  strengths: ['Excellent use of adjectives to describe the garden', 'Action verbs like "leaped," "twirled," and "cheered" make the story exciting'],
+                  improvements: ['Consider using more sensory words - what did the garden smell like? What sounds did the flowers hear?']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Spelling & Grammar',
+              criteriaCount: 2,
+              score: 46,
+              maxScore: 50,
+              assessment: 'Very good spelling and grammar for this grade level. Most sentences are complete and punctuated correctly. A few common spelling errors to work on.',
+              criteria: [
+                {
+                  name: 'Spelling Accuracy',
+                  score: 22,
+                  maxScore: 25,
+                  rationale: 'Most words spelled correctly including challenging words like "beautiful" and "friend." A few errors noted: "becuase" (because), "thier" (their), and "hapened" (happened).',
+                  strengths: ['Correctly spelled difficult words: "garden," "magical," "together"', 'Good use of word wall words'],
+                  improvements: ['Practice "because" - remember: Big Elephants Can Always Understand Small Elephants', 'Remember "their" has "heir" in it - someone who inherits']
+                },
+                {
+                  name: 'Sentence Structure',
+                  score: 24,
+                  maxScore: 25,
+                  rationale: 'Excellent variety of sentence types! Used both short punchy sentences ("The sun was hot.") and longer compound sentences with "and" and "but."',
+                  strengths: ['Capital letters at the start of every sentence', 'Periods and question marks used correctly', 'Tried using exclamation points for exciting parts!'],
+                  improvements: ['One run-on sentence on page 2 - try breaking "The flowers were tired and they needed water and the sun was so hot" into two sentences']
+                }
+              ]
+            }
+          ]
+        },
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 85.00,
+            maxScore: 100.00,
+            percentage: 85.0,
+            letterGrade: 'B',
+            feedback: 'Marcus, your analysis of symbolism in "The Great Gatsby" demonstrates strong close reading skills. Your thesis connecting the green light to the corruption of the American Dream is insightful and well-supported with textual evidence. The essay would benefit from smoother transitions between paragraphs and deeper analysis of how Fitzgerald\'s language choices reinforce your argument.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Literary Analysis Essay',
+              criteriaCount: 3,
+              score: 43,
+              maxScore: 50,
+              assessment: 'A well-structured five-paragraph essay with a clear argumentative thesis. Strong use of direct quotations from the novel, though some analysis remains surface-level. The connection between symbolism and theme is established but could be developed further.',
+              criteria: [
+                {
+                  name: 'Thesis & Argument',
+                  score: 15,
+                  maxScore: 17,
+                  rationale: 'The thesis statement on page 1 - "The green light in The Great Gatsby represents not hope, but the corruption of hope by materialism" - is specific and arguable. Each body paragraph connects back to this central claim.',
+                  strengths: ['Thesis takes a clear, debatable position rather than just summarizing', 'Topic sentences in each body paragraph clearly relate to the thesis', 'Counterargument addressed in paragraph 4: "While some critics argue the light represents pure hope..."'],
+                  improvements: ['Thesis could be more nuanced - consider adding "Fitzgerald suggests" to acknowledge interpretation', 'The conclusion mostly restates the thesis - try extending the argument to broader implications']
+                },
+                {
+                  name: 'Evidence & Analysis',
+                  score: 14,
+                  maxScore: 17,
+                  rationale: 'Good selection of quotes from chapters 1, 5, and 9. The quote "Gatsby believed in the green light, the orgastic future" (Ch. 9) is well-chosen. However, some quotes are "dropped in" without sufficient analysis.',
+                  strengths: ['Quotes are properly introduced with signal phrases', 'MLA citation format is correct throughout', 'Evidence selected from multiple chapters shows comprehensive reading'],
+                  improvements: ['Page 2, paragraph 2: The Daisy quote needs more analysis - explain WHY her voice "full of money" connects to corruption', 'Avoid starting sentences with quotes - introduce the speaker/context first', 'Add more analysis of Fitzgerald\'s specific word choices']
+                },
+                {
+                  name: 'Organization & Flow',
+                  score: 14,
+                  maxScore: 16,
+                  rationale: 'Clear five-paragraph structure with introduction, three body paragraphs, and conclusion. Paragraph order is logical (green light → Daisy → American Dream). Some transitions are abrupt.',
+                  strengths: ['Each body paragraph focuses on one main idea', 'Introduction hooks reader with the question about the American Dream', 'Conclusion circles back to opening effectively'],
+                  improvements: ['Transition between paragraphs 2 and 3 is abrupt - "Another symbol" is weak', 'Consider using transitional phrases like "Building on this idea..." or "This materialism extends to..."']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Writing Mechanics',
+              criteriaCount: 2,
+              score: 42,
+              maxScore: 50,
+              assessment: 'Generally strong command of grammar and academic writing conventions. A few errors with comma usage and one unclear pronoun reference. Writing style is appropriate for literary analysis.',
+              criteria: [
+                {
+                  name: 'Grammar & Punctuation',
+                  score: 21,
+                  maxScore: 25,
+                  rationale: 'Most sentences are grammatically correct. Issues identified: comma splice on page 2 ("The light is green, this represents..."), missing comma after introductory clause on page 3, and unclear "it" reference in the conclusion.',
+                  strengths: ['Correct use of semicolons to join related independent clauses', 'Proper comma usage with quotations', 'No sentence fragments or run-ons (except the one comma splice)'],
+                  improvements: ['Review comma splice rules - use semicolon, period, or conjunction', 'Check all pronouns have clear antecedents', 'Add comma after introductory phrases longer than 4 words']
+                },
+                {
+                  name: 'Academic Voice',
+                  score: 21,
+                  maxScore: 25,
+                  rationale: 'Maintains formal academic tone throughout most of the essay. Avoids first person ("I think") and second person ("you"). A few instances of informal language noted.',
+                  strengths: ['Uses literary present tense correctly ("Fitzgerald writes," not "wrote")', 'Sophisticated vocabulary: "juxtaposition," "paradoxically," "epitomizes"', 'Avoids plot summary - focuses on analysis'],
+                  improvements: ['Page 3: "Gatsby is basically obsessed" - "basically" is too informal', 'Avoid contractions in formal writing ("can\'t" → "cannot")']
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 78.00,
+            maxScore: 100.00,
+            percentage: 78.0,
+            letterGrade: 'C+',
+            feedback: 'Your feminist reading of "Jane Eyre" demonstrates understanding of the theoretical framework, but the paper needs deeper engagement with secondary scholarship. The close reading of the red-room scene (pages 4-5) is the strongest section. To improve, integrate more peer-reviewed criticism and position your argument within the existing scholarly conversation rather than presenting your reading in isolation.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Critical Theory Application',
+              criteriaCount: 3,
+              score: 38,
+              maxScore: 50,
+              assessment: 'Demonstrates foundational understanding of feminist literary criticism. Application of Gilbert and Gubar\'s "madwoman" theory is present but underdeveloped. The reading sometimes conflates feminist critique with general character analysis.',
+              criteria: [
+                {
+                  name: 'Theoretical Framework',
+                  score: 12,
+                  maxScore: 17,
+                  rationale: 'The paper correctly identifies Gilbert and Gubar\'s "Madwoman in the Attic" as the theoretical lens (page 1) and applies their concept of female rage/confinement to Jane\'s red-room experience. However, the theory is explained rather than applied in the middle sections.',
+                  strengths: ['Accurate summary of Gilbert and Gubar\'s central argument', 'Effective application in the red-room analysis (pages 4-5)', 'Connects Bertha Mason to the "madwoman" archetype'],
+                  improvements: ['Pages 6-8 drift into general feminist themes without applying the specific theoretical framework', 'Need to engage with critiques of Gilbert and Gubar - Spivak\'s postcolonial challenge would strengthen the analysis', 'Distinguish between feminist criticism broadly and your specific theoretical approach']
+                },
+                {
+                  name: 'Scholarly Engagement',
+                  score: 12,
+                  maxScore: 17,
+                  rationale: 'Only three secondary sources cited, and two are from the course syllabus. No engagement with scholarship published after 2005. The sources are summarized rather than integrated into your argument.',
+                  strengths: ['Primary text quotations are well-selected and properly cited', 'Gilbert and Gubar are quoted directly, not just paraphrased'],
+                  improvements: ['Add 4-5 peer-reviewed articles from journals like "Victorian Studies" or "Brontë Studies"', 'Engage with scholars who disagree - what would a Marxist critic say about your reading?', 'Position your argument: "While Smith (2018) argues X, this paper contends Y because Z"']
+                },
+                {
+                  name: 'Argumentative Sophistication',
+                  score: 14,
+                  maxScore: 16,
+                  rationale: 'The thesis that "Jane\'s journey from red-room to Thornfield represents the Victorian woman\'s negotiation between rebellion and conformity" is appropriately complex for this level. However, the argument becomes reductive in places.',
+                  strengths: ['Thesis acknowledges tension/contradiction rather than making simple claims', 'Recognizes ambiguity in Brontë\'s portrayal of female independence', 'Conclusion raises productive questions for further research'],
+                  improvements: ['Avoid claims like "Brontë clearly intends..." - we can\'t know authorial intent', 'The reading of St. John Rivers (page 9) oversimplifies his function in the novel']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Writing & Documentation',
+              criteriaCount: 2,
+              score: 40,
+              maxScore: 50,
+              assessment: 'Prose is generally clear with appropriate academic register. MLA formatting has several errors. Block quotations are overused in the middle section.',
+              criteria: [
+                {
+                  name: 'Prose Quality',
+                  score: 21,
+                  maxScore: 25,
+                  rationale: 'Writing is clear and mostly free of grammatical errors. Some sentences are overly complex, leading to unclear syntax. The passive voice is overused in the theoretical framework section.',
+                  strengths: ['Strong topic sentences that advance the argument', 'Effective transitions between major sections', 'Vocabulary is sophisticated without being pretentious'],
+                  improvements: ['Page 3: "The way in which the manner by which Jane\'s resistance is portrayed..." - simplify this construction', 'Vary sentence length more - several paragraphs have only long, complex sentences', 'Active voice is stronger: "The text reveals" not "It is revealed by the text"']
+                },
+                {
+                  name: 'MLA Documentation',
+                  score: 19,
+                  maxScore: 25,
+                  rationale: 'Works Cited page has formatting errors: hanging indent inconsistent, one source missing publication year. In-text citations are mostly correct but block quote formatting needs attention.',
+                  strengths: ['Page numbers included for all direct quotations', 'Signal phrases introduce quotes smoothly', 'Properly distinguishes between Brontë (author) and Jane (narrator)'],
+                  improvements: ['Block quotes over 4 lines need to be indented 0.5" from left margin with no quotation marks', 'Works Cited: alphabetize by author last name, not by title', 'Page 7 citation missing: "As one critic notes..." - which critic? Cite specifically']
+                }
+              ]
+            }
+          ]
         }
       },
-      physics: {
-        questionTitle: 'The student correctly applies kinematic equations to solve the projectile motion problem...',
-        criteriaCount: 4,
-        totalScore: 9.0,
-        maxScore: 10.0,
-        overallAssessment: 'Excellent work showing strong understanding of projectile motion concepts. The solution methodology is clear and calculations are accurate.',
-        criterion: {
-          name: 'Problem Setup',
-          score: 9,
-          maxScore: 10,
-          rationale: 'The student correctly identifies the relevant kinematic equations and properly decomposes the initial velocity into vertical and horizontal components.',
-          strengths: ['Clear identification of given values and unknowns.', 'Correct application of trigonometric relationships.']
-        }
-      },
+
+      // MATH - Available at all levels
       math: {
-        questionTitle: 'The student demonstrates mastery of integration by parts technique with clear methodology...',
-        criteriaCount: 3,
-        totalScore: 10.0,
-        maxScore: 10.0,
-        overallAssessment: 'Perfect execution of the integration by parts technique. All steps are shown clearly with correct mathematical notation.',
-        criterion: {
-          name: 'Method Selection',
-          score: 10,
-          maxScore: 10,
-          rationale: 'Excellent choice of u and dv for the integration by parts formula. The selection minimizes complexity and leads to a straightforward solution.',
-          strengths: ['Optimal choice of substitution variables.', 'Clear step-by-step solution process.']
+        elementary: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 47.00,
+            maxScore: 50.00,
+            percentage: 94.0,
+            letterGrade: 'A',
+            feedback: 'Excellent work, Tyler! You got 19 out of 20 problems correct and showed your work beautifully. I can see you really understand how to carry numbers in addition and borrow in subtraction. The one mistake on problem #14 was just a small counting error - you know the method! Keep up the fantastic work.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Two-Digit Addition (Problems 1-10)',
+              criteriaCount: 2,
+              score: 24,
+              maxScore: 25,
+              assessment: 'Excellent performance on two-digit addition with regrouping. All carrying was done correctly, and work is shown clearly in the standard algorithm format.',
+              criteria: [
+                {
+                  name: 'Correct Answers',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: '9 out of 10 problems correct. Problem #7 (47 + 38) shows the correct method but has an arithmetic slip: 7+8=15 was written as 7+8=14, giving 84 instead of 85.',
+                  strengths: ['Correctly carried the 1 in problems #1, #3, #5, #6, #8, #9, #10', 'Proper column alignment keeps place values organized', 'Problem #4 (29 + 56 = 85) shows excellent regrouping'],
+                  improvements: ['Double-check addition facts for 7+8 - try using fingers or a number line if needed']
+                },
+                {
+                  name: 'Showing Work',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'All work is shown in the standard algorithm format. The small "1" for carrying is written clearly above the tens column in every problem that requires it.',
+                  strengths: ['Numbers are lined up neatly by place value', 'Carrying notation is clear and consistent', 'Work is easy to follow from top to bottom'],
+                  improvements: []
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Two-Digit Subtraction (Problems 11-20)',
+              criteriaCount: 2,
+              score: 23,
+              maxScore: 25,
+              assessment: 'Strong subtraction skills demonstrated. Borrowing (regrouping) is understood well. One error on problem #14 due to a counting mistake after correct setup.',
+              criteria: [
+                {
+                  name: 'Correct Answers',
+                  score: 13,
+                  maxScore: 15,
+                  rationale: '9 out of 10 problems correct. Problem #14 (63 - 27): The borrowing was set up correctly (crossing out 6, writing 5, changing 3 to 13), but 13-7 was calculated as 5 instead of 6, giving 35 instead of 36.',
+                  strengths: ['Problem #11 (52 - 18 = 34): Perfect borrowing technique', 'Problem #17 (80 - 45 = 35): Correctly handled borrowing from a zero', 'Problem #20 (91 - 49 = 42): Multiple regrouping steps done correctly'],
+                  improvements: ['For 13-7, try counting up from 7: "7...8, 9, 10, 11, 12, 13" (that\'s 6 jumps!)']
+                },
+                {
+                  name: 'Showing Work',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'Borrowing notation is shown correctly throughout. The crossing out and rewriting of numbers demonstrates understanding of the regrouping concept.',
+                  strengths: ['Clear crossing out of original digits when borrowing', 'New values written small but legibly above', 'Consistent method used for all problems'],
+                  improvements: []
+                }
+              ]
+            }
+          ]
+        },
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 82.00,
+            maxScore: 100.00,
+            percentage: 82.0,
+            letterGrade: 'B-',
+            feedback: 'Aisha, you show solid understanding of solving quadratic equations. Your factoring skills are strong, and you correctly apply the quadratic formula when needed. The main areas for improvement are sign errors in the discriminant calculation and remembering to check for extraneous solutions. Keep practicing the ± step in the quadratic formula!'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Factoring Quadratics',
+              criteriaCount: 2,
+              score: 28,
+              maxScore: 30,
+              assessment: 'Strong factoring skills demonstrated. All factorable quadratics were correctly identified and factored. Zero-product property applied correctly to find solutions.',
+              criteria: [
+                {
+                  name: 'Factoring Technique',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Problems #1-4 all factored correctly. For x² + 5x + 6 = 0, correctly found factors (x+2)(x+3) by identifying that 2×3=6 and 2+3=5. Problem #3 with negative coefficients (x² - 7x + 12) also handled well.',
+                  strengths: ['Correctly identifies factor pairs that multiply to c and add to b', 'Problem #2: x² - 9 = (x+3)(x-3) shows mastery of difference of squares', 'All signs handled correctly in the factored form'],
+                  improvements: ['Problem #4 could have been simplified first: 2x² + 4x - 6 = 2(x² + 2x - 3) makes factoring easier']
+                },
+                {
+                  name: 'Finding Solutions',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Zero-product property applied correctly to all factored forms. Both solutions found for each equation and answers given in simplest form.',
+                  strengths: ['Correctly sets each factor equal to zero', 'Shows work: (x+2)=0 → x=-2', 'Lists both solutions clearly: x = -2, -3'],
+                  improvements: ['Consider verifying by substituting one solution back into original equation']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Quadratic Formula Problems',
+              criteriaCount: 3,
+              score: 32,
+              maxScore: 40,
+              assessment: 'Understands when to apply the quadratic formula and sets it up correctly. Errors in discriminant calculation (sign mistakes under the radical) affected several answers. Simplification of radicals needs attention.',
+              criteria: [
+                {
+                  name: 'Formula Setup',
+                  score: 13,
+                  maxScore: 15,
+                  rationale: 'Correctly identifies a, b, and c from standard form and substitutes into x = (-b ± √(b²-4ac))/2a. Problem #5: For 2x² + 3x - 5 = 0, correctly wrote a=2, b=3, c=-5.',
+                  strengths: ['Always rewrites equation in standard form first (ax² + bx + c = 0)', 'Labels a, b, c before substituting - good organizational habit', 'Correct placement of values in the formula'],
+                  improvements: ['Problem #7: Didn\'t move the constant to get standard form: 3x² + 2x = 7 should become 3x² + 2x - 7 = 0']
+                },
+                {
+                  name: 'Discriminant Calculation',
+                  score: 9,
+                  maxScore: 15,
+                  rationale: 'Sign errors in b²-4ac calculation. Problem #6: For x² - 4x + 1 = 0, calculated (-4)²-4(1)(1) as 16-4=12 ✓, but Problem #8: For 2x² - 5x - 3 = 0, wrote (-5)²-4(2)(-3) as 25-24=1 instead of 25+24=49.',
+                  strengths: ['Correctly squares negative b values: (-4)² = 16', 'Shows discriminant calculation as a separate step'],
+                  improvements: ['Watch signs: 4ac with negative c gives -4(a)(-c) = +4ac, not -4ac', 'Circle the signs before calculating to avoid errors', 'Problem #8: -4(2)(-3) = +24, so discriminant is 25+24 = 49']
+                },
+                {
+                  name: 'Simplification',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'When discriminant is correct, final simplification is done properly. Radicals simplified (√12 = 2√3) and fractions reduced appropriately.',
+                  strengths: ['Correctly simplifies √12 = √(4×3) = 2√3', 'Reduces fractions to lowest terms', 'Writes both solutions from ± notation'],
+                  improvements: []
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Word Problem Application',
+              criteriaCount: 2,
+              score: 22,
+              maxScore: 30,
+              assessment: 'Good translation of the word problem into an equation. The quadratic was set up correctly, but a sign error in solving led to an incorrect final answer. Physical context (negative length) should have been checked.',
+              criteria: [
+                {
+                  name: 'Problem Setup',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Correctly translated "a rectangle with length 3 more than twice its width has area 77 sq units" into: Let w = width, then length = 2w+3, and w(2w+3) = 77, giving 2w² + 3w - 77 = 0.',
+                  strengths: ['Defined variables clearly at the start', 'Translated "3 more than twice" correctly as 2w + 3', 'Set up area equation correctly: width × length = area'],
+                  improvements: []
+                },
+                {
+                  name: 'Solution & Interpretation',
+                  score: 8,
+                  maxScore: 15,
+                  rationale: 'Used quadratic formula but made a sign error, getting w = 7 or w = -5.5 (should be w = 5.5 or w = -7). Correctly rejected negative width but ended with w = 7 instead of the correct w = 5.5.',
+                  strengths: ['Recognized that width cannot be negative', 'Attempted to verify with area calculation (but used wrong value)', 'Stated final answer with units'],
+                  improvements: ['Recheck: if w=7, then length = 2(7)+3 = 17, and area = 7×17 = 119 ≠ 77', 'Always verify your answer satisfies the original problem conditions', 'The discriminant error from Problem #8 carried through here']
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 92.00,
+            maxScore: 100.00,
+            percentage: 92.0,
+            letterGrade: 'A-',
+            feedback: 'Excellent work on this integration problem set, Jordan. Your technique selection is strong - you consistently choose the most efficient method for each integral. The integration by parts problems are particularly well done. Minor points lost for forgetting +C on two problems and an algebra slip in the final simplification of problem #4. Overall, this demonstrates strong mastery of Calc II integration techniques.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Integration by Parts',
+              criteriaCount: 2,
+              score: 48,
+              maxScore: 50,
+              assessment: 'Excellent application of integration by parts. LIATE rule applied correctly for u selection. Tabular method used efficiently for repeated integration by parts.',
+              criteria: [
+                {
+                  name: 'Method Selection (u and dv)',
+                  score: 25,
+                  maxScore: 25,
+                  rationale: 'Perfect u and dv selection on all three problems. For ∫x²eˣdx, correctly chose u=x² (polynomial) and dv=eˣdx (exponential), following LIATE. For ∫ln(x)dx, recognized ln(x) must be u since it cannot be easily integrated.',
+                  strengths: ['Consistently applies LIATE (Logs, Inverse trig, Algebraic, Trig, Exponential)', 'Problem #2: Used tabular method efficiently for ∫x³cos(x)dx, avoiding four separate applications', 'Correctly identified when to use IBP vs. substitution'],
+                  improvements: []
+                },
+                {
+                  name: 'Execution & Simplification',
+                  score: 23,
+                  maxScore: 25,
+                  rationale: 'Calculations are correct and well-organized. All problems reach the correct antiderivative. Minor issue: +C forgotten on problem #1, though present on #2 and #3.',
+                  strengths: ['Clear notation: u, du, v, dv labeled in a table for each problem', 'Problem #3 (∫eˣsin(x)dx): Correctly handled the "cycling" case, solving for the integral algebraically', 'Final answers simplified completely'],
+                  improvements: ['Remember +C on indefinite integrals - it\'s easy to forget after complex calculations!', 'Consider boxing final answers to make them stand out']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Trigonometric Integrals',
+              criteriaCount: 2,
+              score: 44,
+              maxScore: 50,
+              assessment: 'Strong understanding of trig integral strategies. Correctly applies reduction formulas and trig identities. One sign error in the half-angle substitution problem.',
+              criteria: [
+                {
+                  name: 'Identity Selection',
+                  score: 22,
+                  maxScore: 25,
+                  rationale: 'Appropriate identities chosen for each problem type. For ∫sin⁴(x)dx, correctly used half-angle identity twice: sin²(x) = (1-cos(2x))/2. For ∫sin³(x)cos²(x)dx, saved one sin(x) for du.',
+                  strengths: ['Problem #4: Correctly split sin⁴(x) = (sin²(x))² and applied half-angle', 'Problem #5: Recognized odd power of sin allows u = cos(x) substitution', 'Proper use of Pythagorean identity: sin²(x) = 1 - cos²(x)'],
+                  improvements: ['Problem #6: The identity cos²(x) = (1+cos(2x))/2 was applied correctly, but check the sign in the second term of your expansion']
+                },
+                {
+                  name: 'Calculation Accuracy',
+                  score: 22,
+                  maxScore: 25,
+                  rationale: 'Most calculations correct. Problem #6 has an algebra error: when expanding (1+cos(2x))²/4, the middle term should be +cos(2x)/2, not -cos(2x)/2. This affected the final answer.',
+                  strengths: ['Problem #4: Complex expansion handled without error', 'Back-substitution done correctly when using u-sub', 'Constants factored out before integrating'],
+                  improvements: ['In Problem #6: (1+cos(2x))² = 1 + 2cos(2x) + cos²(2x), check the coefficient of the middle term', 'Consider writing out expansion steps more explicitly to catch sign errors']
+                }
+              ]
+            }
+          ]
         }
       },
-      chemistry: {
-        questionTitle: 'The student balances the redox reaction using the half-reaction method in acidic solution...',
-        criteriaCount: 4,
-        totalScore: 8.0,
-        maxScore: 10.0,
-        overallAssessment: 'Good understanding of redox chemistry and the half-reaction balancing method. Minor improvements could be made in explaining the electron transfer process.',
-        criterion: {
-          name: 'Half-Reaction Balancing',
-          score: 8,
-          maxScore: 10,
-          rationale: 'The oxidation and reduction half-reactions are correctly identified and balanced. The electron count matches properly for the overall reaction.',
-          strengths: ['Correct identification of oxidation states.', 'Proper balancing of electrons between half-reactions.']
-        }
-      },
+
+      // BIOLOGY - Available at all levels
       biology: {
-        questionTitle: 'The student explains the DNA replication process with accurate identification of key enzymes...',
-        criteriaCount: 5,
-        totalScore: 7.5,
-        maxScore: 10.0,
-        overallAssessment: 'Good understanding of DNA replication fundamentals. The essay correctly identifies major enzymes but could provide more detail on the coordination between leading and lagging strand synthesis.',
-        criterion: {
-          name: 'Key Term Usage',
-          score: 7,
-          maxScore: 10,
-          rationale: 'The student correctly identifies and uses key terms like helicase, primase, and DNA polymerase III. The explanation of their roles is accurate but could be more detailed.',
-          strengths: ['Accurate identification of replication enzymes.', 'Correct description of semi-conservative replication.']
+        elementary: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 44.00,
+            maxScore: 50.00,
+            percentage: 88.0,
+            letterGrade: 'B+',
+            feedback: 'Great job on your animal sorting activity, Sophia! You correctly sorted 11 out of 12 animals into their groups and drew wonderful pictures to show their special features. I especially loved your drawing of the penguin with its flippers! Remember: frogs are amphibians (not reptiles) because they start life in water as tadpoles and breathe through their skin. Keep up the excellent work, young scientist!'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Animal Sorting',
+              criteriaCount: 3,
+              score: 27,
+              maxScore: 30,
+              assessment: 'Strong understanding of the five animal groups. Most animals correctly sorted with good reasoning. The frog classification was the only error - a common misconception that we\'ll review together.',
+              criteria: [
+                {
+                  name: 'Mammals',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'All four mammals (dog, whale, bat, elephant) correctly identified and placed in the Mammals box. Excellent recognition that whales and bats are mammals even though they swim and fly!',
+                  strengths: ['Correctly identified that whales are mammals: "They feed milk to babies and breathe air"', 'Knew that bats are mammals, not birds: "Bats have fur not feathers"', 'Drew hair/fur on each mammal picture'],
+                  improvements: []
+                },
+                {
+                  name: 'Birds, Fish & Reptiles',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'All birds (eagle, penguin, robin) correctly sorted - great job knowing penguins are birds! Fish (goldfish, shark) and reptiles (snake, turtle) also correctly placed.',
+                  strengths: ['Knew penguins are birds even though they don\'t fly: "They have feathers and lay eggs"', 'Correctly put shark with fish: "Sharks have gills and fins"', 'Drew scales on the snake and turtle shell'],
+                  improvements: []
+                },
+                {
+                  name: 'Amphibians',
+                  score: 7,
+                  maxScore: 10,
+                  rationale: 'The frog was placed in the Reptiles box instead of Amphibians. This is a very common mistake! Frogs may look like reptiles, but they have special skin that must stay wet, and baby frogs (tadpoles) live in water.',
+                  strengths: ['Salamander correctly placed in Amphibians', 'Explanation showed good thinking: "Frogs are cold-blooded like snakes"'],
+                  improvements: ['Frogs are amphibians - they start life as tadpoles with gills in the water!', 'Amphibians have smooth, wet skin. Reptiles have dry, scaly skin.', 'Hint: AMPHIbians live in BOTH water and land (amphi means both)']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Animal Features Drawing',
+              criteriaCount: 2,
+              score: 17,
+              maxScore: 20,
+              assessment: 'Wonderful drawings that show key animal features! Labels are clear and the pictures help explain why each animal belongs in its group.',
+              criteria: [
+                {
+                  name: 'Drawing Accuracy',
+                  score: 9,
+                  maxScore: 10,
+                  rationale: 'Drawings clearly show important features: fur on mammals, feathers on birds, scales on fish and reptiles. The whale\'s blowhole and the bird\'s beak shapes are nicely detailed.',
+                  strengths: ['Drew different beak shapes for eagle (hooked) and robin (small and pointed)', 'Showed the turtle\'s shell pattern carefully', 'Added the whale\'s blowhole with water spraying out'],
+                  improvements: ['The shark could use gill slits on the side - that\'s how we know it\'s a fish!']
+                },
+                {
+                  name: 'Labels & Explanations',
+                  score: 8,
+                  maxScore: 10,
+                  rationale: 'Good use of labels to point out important features. Most labels are spelled correctly and easy to read. Some explanations could be more detailed.',
+                  strengths: ['Labeled "fur," "feathers," and "scales" correctly', 'Wrote "warm-blooded" on mammals and "cold-blooded" on reptiles', 'Used arrows to point to specific features'],
+                  improvements: ['Add labels for fins, gills, and wings too', 'Tell us what each animal eats - carnivore, herbivore, or omnivore?']
+                }
+              ]
+            }
+          ]
+        },
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 78.00,
+            maxScore: 100.00,
+            percentage: 78.0,
+            letterGrade: 'C+',
+            feedback: 'Priya, your lab report demonstrates understanding of the basic stages of mitosis, and your microscope sketches are well-drawn and properly labeled. The main area for improvement is connecting what you observed to the underlying molecular mechanisms. Your data table is incomplete (missing prophase duration), and the conclusion needs to address all parts of the hypothesis. See detailed comments below for specific improvements.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Microscope Observations',
+              criteriaCount: 3,
+              score: 38,
+              maxScore: 50,
+              assessment: 'Good observational skills demonstrated. Sketches accurately represent what was seen under the microscope. Stage identification is mostly correct with one error in distinguishing prometaphase from metaphase.',
+              criteria: [
+                {
+                  name: 'Cell Sketches',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Sketches are clear, appropriately sized, and show key structures. Chromosomes are drawn accurately for each stage. The anaphase sketch particularly well captures the V-shape of separating chromatids.',
+                  strengths: ['Prophase: Chromatin condensation clearly visible, nuclear envelope drawn as it begins to break down', 'Metaphase: Chromosomes aligned at cell equator (metaphase plate) - good detail', 'Used different colors for sister chromatids vs. spindle fibers - helpful visual distinction'],
+                  improvements: ['Include scale bars on each sketch to indicate actual cell size', 'Your "metaphase" sketch shows chromosomes still moving toward the middle - this is actually prometaphase']
+                },
+                {
+                  name: 'Stage Identification',
+                  score: 12,
+                  maxScore: 17,
+                  rationale: 'Four of five stages correctly identified. The cell labeled "metaphase" shows chromosomes that haven\'t fully aligned - this should be classified as prometaphase. True metaphase shows all chromosomes perfectly aligned at the cell equator.',
+                  strengths: ['Correctly identified the rare telophase cell with cleavage furrow forming', 'Accurately distinguished interphase cells (diffuse chromatin) from mitotic cells', 'Recognized cytokinesis as separate from telophase'],
+                  improvements: ['Prometaphase vs. metaphase: In metaphase, ALL chromosomes must be aligned at the metaphase plate. If some are still moving, it\'s prometaphase.', 'Look for the "disappearing" nuclear envelope to confirm prometaphase']
+                },
+                {
+                  name: 'Labeling Accuracy',
+                  score: 12,
+                  maxScore: 18,
+                  rationale: 'Most structures labeled correctly. Key error: "centrioles" labeled in plant cell sketches - remember, plant cells don\'t have centrioles! Also missing labels for kinetochores.',
+                  strengths: ['Correct labels for: chromosomes, spindle fibers, cell plate (plant), cleavage furrow (animal)', 'Sister chromatids correctly distinguished from homologous chromosomes'],
+                  improvements: ['Plant cells do NOT have centrioles - they organize spindles differently', 'Add labels for kinetochores (where spindle fibers attach to chromosomes)', 'Label the centromere region connecting sister chromatids']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Data Analysis & Conclusion',
+              criteriaCount: 2,
+              score: 40,
+              maxScore: 50,
+              assessment: 'Data table is partially complete with good observations about relative time in each stage. The mitotic index calculation is correct. Conclusion partially addresses the hypothesis but lacks discussion of interphase duration.',
+              criteria: [
+                {
+                  name: 'Data Table & Calculations',
+                  score: 20,
+                  maxScore: 25,
+                  rationale: 'Counted 200 cells total. Mitotic index (23/200 = 11.5%) calculated correctly. However, prophase count is listed as "N/A" - this should be a number. Time calculations are correct for stages that have data.',
+                  strengths: ['Mitotic index formula stated and applied correctly', 'Percentage time in each stage calculated properly', 'Noted that most cells were in interphase, showing understanding that mitosis is brief'],
+                  improvements: ['Complete the prophase count - every cell must be in some stage', 'Add a row for prometaphase (you observed these cells but didn\'t count them separately)', 'Show your work: How did you get from 23 mitotic cells to 11.5%?']
+                },
+                {
+                  name: 'Conclusion Quality',
+                  score: 20,
+                  maxScore: 25,
+                  rationale: 'Conclusion states that the hypothesis was supported but doesn\'t fully explain why. The hypothesis predicted interphase would be longest, which your data confirms (89% of cells in interphase), but this isn\'t explicitly connected.',
+                  strengths: ['Restates hypothesis clearly at the start of conclusion', 'Mentions that results match expectations for a root tip meristem', 'Identifies one source of error (difficulty distinguishing stages)'],
+                  improvements: ['Explicitly state: "89% of cells were in interphase, supporting the hypothesis that interphase is the longest phase"', 'Explain WHY cells spend most time in interphase (growth, DNA replication, preparation for division)', 'Add more sources of error: sampling bias, only one time point, subjective stage identification']
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 72.00,
+            maxScore: 100.00,
+            percentage: 72.0,
+            letterGrade: 'C',
+            feedback: 'Chen, your essay demonstrates foundational knowledge of DNA replication, and you correctly identify the major enzymes involved. However, the paper lacks depth in explaining the coordination between leading and lagging strand synthesis, which was a key focus of the prompt. The section on proofreading and repair mechanisms (pages 4-5) is the strongest part of your essay. To improve your grade, revise to include more detail on Okazaki fragment processing and the role of the sliding clamp.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Replication Machinery',
+              criteriaCount: 3,
+              score: 35,
+              maxScore: 50,
+              assessment: 'Correctly identifies most major proteins involved in DNA replication. Understanding of helicase and primase function is strong. The roles of DNA polymerase I and III need clearer distinction, and the sliding clamp (PCNA/β-clamp) is not mentioned.',
+              criteria: [
+                {
+                  name: 'Enzyme Identification',
+                  score: 12,
+                  maxScore: 17,
+                  rationale: 'Five of seven key enzymes correctly identified and described (helicase, primase, DNA pol III, ligase, SSB proteins). DNA polymerase I mentioned but its proofreading vs. gap-filling roles conflated. Sliding clamp not discussed.',
+                  strengths: ['Helicase: Correctly describes unwinding 5\'→3\' direction and ATP dependence', 'Primase: Accurately explains synthesis of ~10 nucleotide RNA primers', 'SSB proteins: Good explanation of preventing re-annealing and secondary structure'],
+                  improvements: ['Distinguish DNA pol I (removes primers, fills gaps) from DNA pol III (main replicative polymerase)', 'Include the sliding clamp (β-clamp in E. coli, PCNA in eukaryotes) - essential for processivity', 'Topoisomerase not mentioned - needed to relieve supercoiling ahead of the fork']
+                },
+                {
+                  name: 'Mechanistic Detail',
+                  score: 11,
+                  maxScore: 17,
+                  rationale: 'General mechanism described but lacks specificity. The 5\'→3\' directionality constraint is mentioned but not connected to the leading/lagging strand problem. No discussion of the trombone model.',
+                  strengths: ['Correctly states DNA synthesis occurs only 5\'→3\'', 'Understands that template strands are antiparallel', 'Mentions semi-conservative replication (Meselson-Stahl)'],
+                  improvements: ['Explain WHY the lagging strand requires discontinuous synthesis (5\'→3\' constraint on antiparallel strand)', 'Describe the "trombone model" of replication fork organization', 'Include actual numbers: ~1000 nucleotides/second for bacterial replication']
+                },
+                {
+                  name: 'Okazaki Fragment Processing',
+                  score: 12,
+                  maxScore: 16,
+                  rationale: 'Okazaki fragments mentioned briefly but the processing pathway is incomplete. Missing steps between primer removal and ligation.',
+                  strengths: ['Correctly identifies Okazaki fragments as ~100-200 nucleotides (eukaryotes)', 'Notes that ligase seals the final nick'],
+                  improvements: ['Complete the pathway: RNase H removes most of primer → DNA pol I removes remaining ribonucleotides via 5\'→3\' exonuclease AND fills the gap → ligase seals', 'Explain why fragment processing requires pol I\'s unique 5\'→3\' exonuclease activity', 'Flap endonuclease (FEN1) pathway in eukaryotes is an alternative to discuss']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Fidelity & Regulation',
+              criteriaCount: 2,
+              score: 37,
+              maxScore: 50,
+              assessment: 'Strong section on proofreading mechanisms. The three levels of replication fidelity are correctly identified. Discussion of replication origin regulation is superficial and focuses too heavily on prokaryotes given this is a molecular biology course.',
+              criteria: [
+                {
+                  name: 'Error Correction Mechanisms',
+                  score: 21,
+                  maxScore: 25,
+                  rationale: 'Excellent explanation of the three-tier fidelity system: (1) base selection, (2) proofreading exonuclease, (3) mismatch repair. Numbers for error rates are approximately correct. This is the strongest section of the essay.',
+                  strengths: ['Correctly states polymerase intrinsic error rate (~10⁻⁵) and final rate (~10⁻¹⁰)', 'Explains 3\'→5\' exonuclease proofreading with kinetic partitioning model', 'MutS/MutL/MutH pathway described accurately for E. coli'],
+                  improvements: ['Eukaryotic mismatch repair differs - MSH2/MSH6 don\'t use methylation for strand discrimination', 'Could mention translesion synthesis polymerases as a tolerance mechanism']
+                },
+                {
+                  name: 'Replication Timing & Origins',
+                  score: 16,
+                  maxScore: 25,
+                  rationale: 'Discussion focuses primarily on bacterial oriC. Eukaryotic origin firing (ORC, licensing, CDK regulation) receives only one paragraph. Given the course focus on eukaryotic molecular biology, this imbalance significantly impacts the score.',
+                  strengths: ['DnaA binding to oriC explained correctly', 'Mentions that origins must fire exactly once per cell cycle'],
+                  improvements: ['Expand eukaryotic section: pre-RC formation, MCM helicase loading, CDK/DDK activation', 'Explain origin licensing: how does the cell ensure each origin fires only once?', 'Discuss replication timing - why do some origins fire early and others late in S phase?', 'ATR/Chk1 checkpoint monitoring replication stress is relevant here']
+                }
+              ]
+            }
+          ]
         }
       },
-      engineering: {
-        questionTitle: 'The student applies beam deflection formulas correctly with proper unit conversion...',
-        criteriaCount: 4,
-        totalScore: 9.5,
-        maxScore: 10.0,
-        overallAssessment: 'Excellent structural analysis work. The student demonstrates strong command of beam theory and careful attention to units throughout the calculation.',
-        criterion: {
-          name: 'Formula Application',
-          score: 10,
-          maxScore: 10,
-          rationale: 'The correct deflection formula for a simply supported beam with a central point load is selected and applied. All parameters are correctly substituted.',
-          strengths: ['Correct formula selection for the loading condition.', 'Careful attention to unit consistency.']
+
+      // CHEMISTRY - High School and University only
+      chemistry: {
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 41.00,
+            maxScore: 50.00,
+            percentage: 82.0,
+            letterGrade: 'B-',
+            feedback: 'Good work on balancing equations, Jake! You clearly understand the law of conservation of mass and use a systematic approach. Problems 1-6 are all correct - nice job with the combustion reactions! The errors on problems 7-10 mostly involve polyatomic ions like sulfate (SO₄²⁻) and nitrate (NO₃⁻). Try treating these as single units when balancing. Keep practicing and you\'ll master these!'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Simple Balancing (Problems 1-5)',
+              criteriaCount: 2,
+              score: 24,
+              maxScore: 25,
+              assessment: 'Excellent work on basic balancing problems involving synthesis, decomposition, and single replacement reactions. All five problems correctly balanced using systematic approach.',
+              criteria: [
+                {
+                  name: 'Balancing Accuracy',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'All five equations balanced correctly: (1) 2H₂ + O₂ → 2H₂O ✓, (2) 2Na + Cl₂ → 2NaCl ✓, (3) 2KClO₃ → 2KCl + 3O₂ ✓, (4) Zn + 2HCl → ZnCl₂ + H₂ ✓, (5) 4Fe + 3O₂ → 2Fe₂O₃ ✓',
+                  strengths: ['Problem 3: Correctly handled the tricky 3:2 ratio for oxygen', 'Problem 5: Recognized that iron(III) oxide needs coefficient of 2', 'All coefficients reduced to lowest whole numbers'],
+                  improvements: []
+                },
+                {
+                  name: 'Work Shown',
+                  score: 9,
+                  maxScore: 10,
+                  rationale: 'Atom inventory tables shown for each problem. Clear organization with element counts before and after balancing.',
+                  strengths: ['Used T-charts to count atoms on each side', 'Showed adjustments step-by-step', 'Verified final counts match'],
+                  improvements: ['For Problem 5, show intermediate step: first balance Fe, then O']
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Combustion Reactions (Problem 6)',
+              criteriaCount: 1,
+              score: 8,
+              maxScore: 10,
+              assessment: 'Hydrocarbon combustion balanced correctly using the standard approach of balancing C first, then H, then O last.',
+              criteria: [
+                {
+                  name: 'Combustion Balancing',
+                  score: 8,
+                  maxScore: 10,
+                  rationale: 'C₃H₈ + 5O₂ → 3CO₂ + 4H₂O correctly balanced. Good recognition that fractional coefficients (5O₂) are acceptable, then multiplied through if needed for whole numbers.',
+                  strengths: ['Balanced in correct order: Carbon (3) → Hydrogen (4 H₂O from 8H) → Oxygen (10 O atoms = 5O₂)', 'Showed the oxygen calculation: 6 from CO₂ + 4 from H₂O = 10 oxygen atoms needed'],
+                  improvements: ['Show the verification step: 3 C, 8 H, 10 O on both sides']
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Ionic Equations (Problems 7-10)',
+              criteriaCount: 2,
+              score: 9,
+              maxScore: 15,
+              assessment: 'Difficulties with equations containing polyatomic ions. Problems 7 and 9 have errors in coefficients. These are challenging because you need to balance the polyatomic ion as a unit.',
+              criteria: [
+                {
+                  name: 'Polyatomic Ion Handling',
+                  score: 4,
+                  maxScore: 8,
+                  rationale: 'Problem 7: Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl was written as Na₂SO₄ + BaCl₂ → BaSO₄ + NaCl₂ (incorrect formula for sodium chloride). Problem 9: Similar error with nitrate.',
+                  strengths: ['Problem 8: Correctly balanced Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O', 'Problem 10: Ca(NO₃)₂ handled correctly'],
+                  improvements: ['NaCl₂ is not a valid compound - sodium forms Na⁺, which pairs 1:1 with Cl⁻', 'Treat SO₄²⁻ as one unit when counting - it appears once on each side', 'Write out ion charges above compounds to help track: Na⁺, SO₄²⁻, Ba²⁺, Cl⁻']
+                },
+                {
+                  name: 'Charge Balance Awareness',
+                  score: 5,
+                  maxScore: 7,
+                  rationale: 'The errors suggest focusing only on atom count without considering ionic charges. In ionic compounds, total positive charges must equal total negative charges.',
+                  strengths: ['Recognized that barium sulfate is insoluble (precipitate)', 'Correctly wrote formulas for most ionic compounds'],
+                  improvements: ['Check compound formulas before balancing - "NaCl₂" would have charge imbalance', 'For double replacement: just swap partners, keeping formulas correct', 'Remember: the subscripts in a formula never change during balancing!']
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 76.00,
+            maxScore: 100.00,
+            percentage: 76.0,
+            letterGrade: 'C',
+            feedback: 'Maria, your understanding of redox chemistry fundamentals is solid - you correctly assign oxidation states and identify oxidizing/reducing agents. The half-reaction balancing for Problem 1 (acidic conditions) is well done. However, Problems 2-3 in basic conditions show systematic errors in the hydroxide/water balancing steps. Review the "basic solution" modification to the half-reaction method: after balancing in acidic conditions, add OH⁻ to both sides to neutralize H⁺.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Oxidation State Assignment',
+              criteriaCount: 2,
+              score: 23,
+              maxScore: 25,
+              assessment: 'Strong understanding of oxidation state rules. All assignments correct except for one ambiguous case with sulfur in thiosulfate.',
+              criteria: [
+                {
+                  name: 'Element Oxidation States',
+                  score: 13,
+                  maxScore: 15,
+                  rationale: 'Correctly assigned oxidation states for: Fe³⁺ → Fe²⁺ (reduction), MnO₄⁻ where Mn = +7, Cr₂O₇²⁻ where Cr = +6, and all elemental forms = 0. The thiosulfate (S₂O₃²⁻) assignment of S = +2 for both sulfurs is an oversimplification.',
+                  strengths: ['Applied rule: Oxygen is -2 (except in peroxides)', 'Correctly calculated Mn in MnO₄⁻: x + 4(-2) = -1, so x = +7', 'Recognized that elemental Zn, Fe, Cu all have oxidation state of 0'],
+                  improvements: ['In S₂O₃²⁻, the two sulfurs are NOT equivalent: one is +6 (like in sulfate), one is -2 (like in sulfide). Average is +2, but this matters for mechanism.']
+                },
+                {
+                  name: 'Identifying Oxidation/Reduction',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'Correctly identified which species is oxidized vs. reduced in all four reactions. Properly labeled oxidizing agents (species that get reduced) and reducing agents.',
+                  strengths: ['Clear labels: "Fe²⁺ → Fe³⁺, loses electron, OXIDATION"', 'Correctly identified MnO₄⁻ as oxidizing agent (it is reduced, Mn: +7 → +2)', 'Used memory aid: "LEO says GER" noted in margins'],
+                  improvements: []
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Half-Reaction Method (Acidic)',
+              criteriaCount: 2,
+              score: 28,
+              maxScore: 35,
+              assessment: 'Problem 1 (MnO₄⁻ + Fe²⁺ in acid) is balanced correctly using all seven steps. Clear, systematic work shown. Minor point deduction for not explicitly stating electron transfer direction.',
+              criteria: [
+                {
+                  name: 'Step-by-Step Method',
+                  score: 16,
+                  maxScore: 18,
+                  rationale: 'All steps shown correctly: (1) Separate half-reactions, (2) Balance atoms other than O and H, (3) Balance O with H₂O, (4) Balance H with H⁺, (5) Balance charge with e⁻, (6) Equalize electrons, (7) Add half-reactions.',
+                  strengths: ['Oxidation: Fe²⁺ → Fe³⁺ + e⁻ (correctly shows 1 electron lost per Fe)', 'Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (all coefficients correct)', 'Multiplied Fe half-reaction by 5 to equalize electrons'],
+                  improvements: ['Explicitly show that 5 electrons are transferred total', 'Write net ionic equation as final answer, not just molecular']
+                },
+                {
+                  name: 'Final Balanced Equation',
+                  score: 12,
+                  maxScore: 17,
+                  rationale: 'Final equation MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O is correct. Verification of atom and charge balance shown.',
+                  strengths: ['Atom count verified: Mn(1=1), Fe(5=5), O(4=4), H(8=8)', 'Charge verified: Left = -1+10+8 = +17, Right = +2+15 = +17 ✓'],
+                  improvements: ['Could note the color change: purple MnO₄⁻ → colorless Mn²⁺ (practical indicator)']
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Half-Reaction Method (Basic)',
+              criteriaCount: 2,
+              score: 25,
+              maxScore: 40,
+              assessment: 'Problems 2-3 (basic solution) show a systematic error. You balanced in acidic conditions (correct first step) but then added OH⁻ incorrectly. Remember: add OH⁻ to BOTH sides equal to the number of H⁺, then combine H⁺ + OH⁻ → H₂O.',
+              criteria: [
+                {
+                  name: 'Acidic-to-Basic Conversion',
+                  score: 12,
+                  maxScore: 22,
+                  rationale: 'Problem 2: After correct acidic balance, wrote "add 4OH⁻ to right side" - this should be to BOTH sides. Problem 3: Same error. This led to incorrect final equations with H⁺ still present in "basic" solution.',
+                  strengths: ['Correctly balanced in acidic solution first (proper approach)', 'Recognized that basic solutions shouldn\'t have H⁺ in final equation', 'Work is organized and steps are numbered'],
+                  improvements: ['Step for basic: Add OH⁻ to BOTH sides equal to number of H⁺', 'Then combine: H⁺ + OH⁻ → H₂O on the side with H⁺', 'Cancel any H₂O that appears on both sides', 'Example: If you have 2H⁺ on left, add 2OH⁻ to BOTH sides → 2H₂O appears on left']
+                },
+                {
+                  name: 'Final Equations (Basic)',
+                  score: 13,
+                  maxScore: 18,
+                  rationale: 'Problem 2 final answer still shows H⁺, which is incorrect for basic solution. Problem 3 has the same issue. The stoichiometric ratios would be correct if the OH⁻/H₂O adjustment were done properly.',
+                  strengths: ['Coefficient ratios between main reactants/products are correct', 'Electron counts are correct', 'Recognized need to modify for basic conditions'],
+                  improvements: ['Your Problem 2 answer: Cr₂O₇²⁻ + 6e⁻ + 14H⁺ → 2Cr³⁺ + 7H₂O needs 14OH⁻ added to both sides', 'This gives: Cr₂O₇²⁻ + 6e⁻ + 7H₂O → 2Cr³⁺ + 14OH⁻ (correct basic form)']
+                }
+              ]
+            }
+          ]
         }
       },
+
+      // PHYSICS - High School and University only
+      physics: {
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 81.00,
+            maxScore: 100.00,
+            percentage: 81.0,
+            letterGrade: 'B-',
+            feedback: 'Alex, you show good understanding of kinematics concepts and can apply the fundamental equations. Your work on Problem #1 (free fall) was excellent - the stone drop calculation was spot-on at 78.4 meters. However, the projectile motion problems reveal some confusion about sign conventions. Remember: when you set "up" as positive, acceleration due to gravity must be negative (-9.8 m/s²). Review your work on Problem #3 where the sign error led to an impossible negative time value.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Free Fall Motion',
+              criteriaCount: 3,
+              score: 45,
+              maxScore: 50,
+              assessment: 'Strong performance on vertical motion problems. The stone drop calculation (Problem #1) demonstrates solid understanding of d = ½gt² equation. Sign conventions are consistent throughout this section.',
+              criteria: [
+                {
+                  name: 'Equation Selection',
+                  score: 18,
+                  maxScore: 20,
+                  rationale: 'You correctly identified d = ½gt² for Problem #1 (finding distance fallen) and v² = v₀² + 2ad for Problem #2 (finding final velocity). The "equation arsenal" list on page 1 shows you understand which equation to use when certain variables are missing.',
+                  strengths: [
+                    'Correct use of d = ½gt² when initial velocity is zero (Problem #1)',
+                    'Identified v² = v₀² + 2ad for Problem #2 since time was not given',
+                    'Listed known and unknown variables before selecting equations'
+                  ],
+                  improvements: [
+                    'For Problem #2, you could have also used energy methods - worth practicing as an alternative approach'
+                  ]
+                },
+                {
+                  name: 'Calculations',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'Numerical calculations are accurate. Problem #1: d = ½(9.8)(4)² = 78.4 m ✓. Problem #2: v = √(2 × 9.8 × 20) = 19.8 m/s ✓. You also correctly kept track of significant figures.',
+                  strengths: [
+                    'Arithmetic is error-free in both problems',
+                    'Appropriate use of significant figures (3 sig figs matching given data)',
+                    'Clear step-by-step work shown'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Units & Dimensional Analysis',
+                  score: 12,
+                  maxScore: 15,
+                  rationale: 'Units are tracked correctly through most calculations. The dimensional check on page 2 shows m/s² × s² = m for the distance calculation. However, Problem #2 is missing the final unit check.',
+                  strengths: [
+                    'Explicit dimensional analysis shown for Problem #1',
+                    'All final answers include appropriate units'
+                  ],
+                  improvements: [
+                    'Add dimensional verification to Problem #2 - confirm √(m²/s²) = m/s'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Projectile Motion',
+              criteriaCount: 3,
+              score: 36,
+              maxScore: 50,
+              assessment: 'This section reveals some conceptual gaps around sign conventions. The horizontal component calculations are correct, but vertical motion calculations have systematic sign errors affecting Problems #3 and #4.',
+              criteria: [
+                {
+                  name: 'Vector Decomposition',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Velocity decomposition using trigonometry is correct. For the ball launched at 25 m/s at 40°: vₓ = 25cos(40°) = 19.15 m/s ✓ and vᵧ = 25sin(40°) = 16.07 m/s ✓. Diagram on page 3 clearly shows the components.',
+                  strengths: [
+                    'Correct application of vₓ = v₀cos(θ) and vᵧ = v₀sin(θ)',
+                    'Helpful diagram showing velocity triangle',
+                    'Components calculated to appropriate precision'
+                  ],
+                  improvements: [
+                    'Label the coordinate system (+x, +y directions) on your diagram'
+                  ]
+                },
+                {
+                  name: 'Sign Convention',
+                  score: 8,
+                  maxScore: 20,
+                  rationale: 'This is where points were lost. On page 4, you set upward as positive but then used g = +9.8 m/s² in the equation y = vᵧt + ½gt². This led to t = -1.6 s in Problem #3, which you circled but didn\'t recognize as impossible. The correct equation should be y = vᵧt - ½gt² (or use g = -9.8).',
+                  strengths: [
+                    'Consistently chose "up is positive" convention',
+                    'Correctly kept vₓ positive throughout (horizontal motion)'
+                  ],
+                  improvements: [
+                    'CRITICAL: When up is positive, gravity must be negative: a = -9.8 m/s²',
+                    'Check reasonableness of answers - negative time is physically impossible',
+                    'Review Problem #4 using corrected sign convention'
+                  ]
+                },
+                {
+                  name: 'Problem Solutions',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Methodology is sound - you correctly identified that horizontal motion has no acceleration and vertical motion is governed by gravity. Range calculation formula R = v₀²sin(2θ)/g was correctly applied in the bonus problem.',
+                  strengths: [
+                    'Correct identification of independent horizontal/vertical motion',
+                    'Range formula application shows understanding of optimization',
+                    'Time of flight correctly identified as when y returns to launch height'
+                  ],
+                  improvements: [
+                    'Redo Problems #3-4 with corrected sign convention to verify answers'
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 91.00,
+            maxScore: 100.00,
+            percentage: 91.0,
+            letterGrade: 'A-',
+            feedback: 'Excellent work, David! Your solutions demonstrate strong command of classical mechanics, particularly in the rotational dynamics and energy conservation sections. The moment of inertia derivation for the hollow cylinder (Problem #2) was mathematically rigorous with proper integral setup. Your only significant gap is in the torque problem where you calculated the wrong moment arm - review the perpendicular distance concept. Overall, this is A-level work showing you\'re ready for more advanced topics.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Rotational Kinematics',
+              criteriaCount: 3,
+              score: 28,
+              maxScore: 30,
+              assessment: 'Nearly flawless work on angular motion. The conversion between linear and angular quantities is handled expertly, and the parallel with translational kinematics is clearly understood.',
+              criteria: [
+                {
+                  name: 'Angular Equations',
+                  score: 10,
+                  maxScore: 10,
+                  rationale: 'Perfect application of rotational kinematic equations. Problem #1a correctly uses ω = ω₀ + αt to find final angular velocity of the spinning disk. Problem #1b properly applies θ = ω₀t + ½αt² for angular displacement, arriving at 47.1 rad (7.5 revolutions).',
+                  strengths: [
+                    'Correct analogy drawn between linear (v = v₀ + at) and angular (ω = ω₀ + αt) equations',
+                    'Proper conversion from radians to revolutions (÷ 2π)',
+                    'Clear variable identification: ω₀ = 2.0 rad/s, α = 1.5 rad/s², t = 4.0 s'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Linear-Angular Relationships',
+                  score: 9,
+                  maxScore: 10,
+                  rationale: 'You correctly used v = rω to find the linear speed of a point on the disk\'s edge (Problem #1c). The tangential acceleration aₜ = rα calculation is also correct. Small deduction: the centripetal acceleration formula was written as aᵣ = ω²r instead of aᵣ = rω² (equivalent, but unconventional notation).',
+                  strengths: [
+                    'Correct application of v = rω yielding v = (0.15 m)(8.0 rad/s) = 1.2 m/s',
+                    'Distinguished between tangential and centripetal acceleration',
+                    'Proper understanding that points at different radii have different linear speeds'
+                  ],
+                  improvements: [
+                    'Use standard notation aᵣ = rω² or v²/r for centripetal acceleration'
+                  ]
+                },
+                {
+                  name: 'Problem Presentation',
+                  score: 9,
+                  maxScore: 10,
+                  rationale: 'Solutions are well-organized with diagrams showing rotation direction and labeled axes. The summary table on page 2 comparing linear and angular quantities is excellent study material. Minor: some intermediate steps could use more annotation.',
+                  strengths: [
+                    'Helpful comparison table: x↔θ, v↔ω, a↔α',
+                    'Clear diagrams with counterclockwise rotation indicated',
+                    'Final answers boxed and labeled with units'
+                  ],
+                  improvements: [
+                    'Add brief explanations of why each equation is chosen'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Moment of Inertia & Torque',
+              criteriaCount: 3,
+              score: 32,
+              maxScore: 40,
+              assessment: 'The moment of inertia derivation is excellent, showing strong calculus skills. The torque section has a conceptual error regarding moment arm calculation that needs attention.',
+              criteria: [
+                {
+                  name: 'Moment of Inertia Derivation',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'Impressive integral setup for the hollow cylinder. You correctly set up I = ∫r²dm, expressed dm = ρdV = ρ(2πrL)dr, and integrated from inner radius R₁ to outer radius R₂. Final result I = ½M(R₁² + R₂²) matches the expected formula.',
+                  strengths: [
+                    'Correct differential element: thin cylindrical shell of thickness dr',
+                    'Proper limits of integration [R₁, R₂]',
+                    'Successfully eliminated ρ in terms of total mass M',
+                    'Result verified by checking limiting cases (R₁→0 gives solid cylinder formula)'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Parallel Axis Theorem',
+                  score: 9,
+                  maxScore: 10,
+                  rationale: 'Correct application of I = Iᴄᴍ + Md² for the rod rotated about its end. You properly identified Iᴄᴍ = (1/12)ML² for a rod about its center, then added Md² where d = L/2. Final answer I = (1/3)ML² is correct.',
+                  strengths: [
+                    'Understood when parallel axis theorem is needed',
+                    'Correctly identified the distance d from CM to new axis',
+                    'Verified answer matches the direct integral result'
+                  ],
+                  improvements: [
+                    'Show the algebra: (1/12)ML² + M(L/2)² = (1/12 + 1/4)ML² = (1/3)ML²'
+                  ]
+                },
+                {
+                  name: 'Torque Calculations',
+                  score: 8,
+                  maxScore: 15,
+                  rationale: 'Problem #4 asks for torque on a door with force applied at 30° to the door surface. You used τ = Fr with r = 0.8 m, but this ignores the angle factor. The correct formula is τ = rF sin(θ) where θ is the angle between r and F. Your answer of 40 N·m should be 40 × sin(30°) = 20 N·m.',
+                  strengths: [
+                    'Correct identification of the pivot point (hinge)',
+                    'Understood that torque causes angular acceleration via τ = Iα'
+                  ],
+                  improvements: [
+                    'CRITICAL: Remember τ = r × F = rF sin(θ) - the moment arm is the perpendicular distance',
+                    'Draw the force vector and identify the perpendicular component',
+                    'Alternative method: find the perpendicular distance directly (0.8 × sin30° = 0.4 m)'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Energy Conservation',
+              criteriaCount: 2,
+              score: 31,
+              maxScore: 30,
+              assessment: 'Outstanding application of energy methods to rotational systems. Bonus point awarded for the elegant solution to the rolling ball problem using both energy and force methods.',
+              criteria: [
+                {
+                  name: 'Rotational Kinetic Energy',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'Perfect work on the flywheel problem. You correctly used KE = ½Iω² and properly accounted for both translational and rotational KE in the rolling ball: KEₜₒₜₐₗ = ½mv² + ½Iω². The substitution v = rω for rolling without slipping was correctly applied.',
+                  strengths: [
+                    'Correct total KE for rolling: ½mv² + ½(⅖mr²)(v/r)² = (7/10)mv²',
+                    'Properly identified that rolling without slipping means v = rω',
+                    'Energy conservation correctly applied: mgh = (7/10)mv²'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Conservation Application',
+                  score: 16,
+                  maxScore: 15,
+                  rationale: 'Bonus point awarded. The Atwood machine with a pulley of mass problem was solved elegantly. You correctly included the pulley\'s rotational KE: mgh = ½m₁v² + ½m₂v² + ½Iω². The insight that v = rω for the string-pulley connection was clearly stated.',
+                  strengths: [
+                    'Correctly included all energy terms (gravitational PE, translational KE, rotational KE)',
+                    'Proper treatment of the pulley as a rotating disk with I = ½MR²',
+                    'Beautiful alternative solution using forces and τ = Iα shown on page 8',
+                    'Both methods yielded same answer, validating the solution'
+                  ],
+                  improvements: []
+                }
+              ]
+            }
+          ]
+        }
+      },
+
+      // CS - High School and University only
+      cs: {
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 86.00,
+            maxScore: 100.00,
+            percentage: 86.0,
+            letterGrade: 'B',
+            feedback: 'Nice work, Sam! Your FizzBuzz implementation shows solid understanding of loops and conditionals. The logic is correct and your code passes all test cases. I especially liked how you structured the main loop with clear conditions. Two areas to focus on: First, the variable names like "n" and "x" (lines 3, 7) could be more descriptive - "currentNumber" or "counter" would make the code self-documenting. Second, the nested if-else on lines 8-14 could be simplified using elif/else if to avoid deep nesting.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'FizzBuzz Implementation',
+              criteriaCount: 3,
+              score: 43,
+              maxScore: 50,
+              assessment: 'Correct implementation that handles all FizzBuzz cases. The divisibility checks are in the right order (checking 15 first, then 3, then 5). Code structure is logical but could be cleaner.',
+              criteria: [
+                {
+                  name: 'Correctness',
+                  score: 18,
+                  maxScore: 20,
+                  rationale: 'All test cases pass. Your check for divisibility by 15 before checking 3 or 5 individually (line 8: "if n % 15 == 0") shows you understand the importance of order in conditional logic. Output matches expected: "1, 2, Fizz, 4, Buzz... FizzBuzz" at 15.',
+                  strengths: [
+                    'Correct order: checks % 15 before % 3 and % 5 individually',
+                    'Loop runs from 1 to 100 inclusive as required',
+                    'Output formatting matches specification exactly'
+                  ],
+                  improvements: [
+                    'Alternative: use (n % 3 == 0 and n % 5 == 0) instead of % 15 for clarity'
+                  ]
+                },
+                {
+                  name: 'Code Structure',
+                  score: 13,
+                  maxScore: 15,
+                  rationale: 'The code is organized into logical sections. However, the nested if-else creates 4 levels of indentation by line 12. Consider using elif (Python) or else if (JavaScript) to flatten the structure.',
+                  strengths: [
+                    'Clear separation between loop setup and condition checking',
+                    'Consistent indentation throughout',
+                    'Each case (Fizz, Buzz, FizzBuzz, number) is handled'
+                  ],
+                  improvements: [
+                    'Flatten nested conditionals: use elif/else if pattern',
+                    'Example refactor: if %15: print FizzBuzz / elif %3: print Fizz / elif %5: print Buzz / else: print n'
+                  ]
+                },
+                {
+                  name: 'Code Style',
+                  score: 12,
+                  maxScore: 15,
+                  rationale: 'Indentation is consistent and the code is readable. Variable naming needs improvement - "n" (line 3) and "x" (line 7) don\'t communicate their purpose. The magic number 100 on line 4 should be a named constant.',
+                  strengths: [
+                    'Consistent 4-space indentation',
+                    'No overly long lines',
+                    'Proper use of comparison operators'
+                  ],
+                  improvements: [
+                    'Rename "n" to "currentNumber" or "num"',
+                    'Define MAX_NUMBER = 100 as a constant at the top',
+                    'Add a brief comment explaining the FizzBuzz rules'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Number Guessing Game',
+              criteriaCount: 3,
+              score: 43,
+              maxScore: 50,
+              assessment: 'Fun implementation! The game works correctly with appropriate feedback for too high/too low guesses. Input validation is partial - handles non-numeric input but not out-of-range numbers.',
+              criteria: [
+                {
+                  name: 'Game Logic',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'Core game loop is correct. The while loop (line 12) continues until guess == secret_number, and the comparison logic (lines 14-18) correctly identifies if the guess is too high or too low. Game ends with congratulations message including attempt count.',
+                  strengths: [
+                    'Random number generation in correct range (1-100)',
+                    'Attempt counter increments properly each guess',
+                    'Clear win condition with attempt count displayed',
+                    'Appropriate "Too high!" / "Too low!" feedback'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Input Handling',
+                  score: 12,
+                  maxScore: 15,
+                  rationale: 'The try-except block (lines 20-23) catches ValueError for non-numeric input and prompts the user to enter a valid number. However, there\'s no check for numbers outside 1-100 range - a guess of 150 is accepted without warning.',
+                  strengths: [
+                    'Try-except handles non-integer input gracefully',
+                    'User gets clear error message: "Please enter a valid number"',
+                    'Program doesn\'t crash on bad input'
+                  ],
+                  improvements: [
+                    'Add range validation: if guess < 1 or guess > 100: print("Please guess between 1 and 100")',
+                    'Don\'t count invalid guesses toward attempt total'
+                  ]
+                },
+                {
+                  name: 'User Experience',
+                  score: 16,
+                  maxScore: 20,
+                  rationale: 'The game is playable and provides feedback. The welcome message (line 8) sets up the rules clearly. Missing features: no option to play again, no hint system, and no "give up" option.',
+                  strengths: [
+                    'Clear welcome message explaining the game',
+                    'Feedback after each guess guides the player',
+                    'Final message shows total attempts'
+                  ],
+                  improvements: [
+                    'Add "Play again? (y/n)" prompt after winning',
+                    'Consider adding remaining guesses or a hint feature',
+                    'Add option to quit mid-game (e.g., type "quit")'
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 87.00,
+            maxScore: 100.00,
+            percentage: 87.0,
+            letterGrade: 'B+',
+            feedback: 'Strong submission, Kevin! Your binary search implementation is correct and efficient. The use of (low + high) >>> 1 on line 15 to prevent integer overflow shows attention to production-quality code - most students miss this edge case. Your time complexity analysis is accurate, though the written explanation could be more rigorous. The main area for improvement is documentation: adding a docstring and inline comments would make this code much more maintainable. Overall, this demonstrates solid algorithmic thinking.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Binary Search Implementation',
+              criteriaCount: 3,
+              score: 46,
+              maxScore: 50,
+              assessment: 'Excellent implementation with correct logic and optimal efficiency. The overflow-safe midpoint calculation shows awareness of real-world constraints. Minor points lost for documentation.',
+              criteria: [
+                {
+                  name: 'Correctness',
+                  score: 19,
+                  maxScore: 20,
+                  rationale: 'The algorithm handles all cases correctly. Base case (line 12: "if low > high return -1") properly handles element-not-found. The comparison on line 17 correctly narrows the search space. Tested against edge cases: empty array, single element, target at start/end/middle - all pass.',
+                  strengths: [
+                    'Correct termination condition: low > high',
+                    'Proper handling of found element: returns index, not value',
+                    'Search space correctly halved: low = mid + 1 OR high = mid - 1',
+                    'Works correctly when target is not in array'
+                  ],
+                  improvements: [
+                    'Add explicit check for null/undefined array input (line 10)'
+                  ]
+                },
+                {
+                  name: 'Efficiency',
+                  score: 18,
+                  maxScore: 18,
+                  rationale: 'Optimal O(log n) time complexity achieved. The midpoint calculation "mid = (low + high) >>> 1" (line 15) is the overflow-safe version - excellent! Using >>> (unsigned right shift) instead of regular division handles the case where low + high exceeds MAX_INT. Space complexity is O(1) as required.',
+                  strengths: [
+                    'Overflow-safe midpoint: (low + high) >>> 1 instead of (low + high) / 2',
+                    'No unnecessary allocations - pure iterative approach',
+                    'O(log n) time confirmed: halves search space each iteration',
+                    'O(1) space - only uses low, high, mid variables'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Documentation',
+                  score: 9,
+                  maxScore: 12,
+                  rationale: 'The function lacks a docstring/JSDoc comment. Variable names (low, high, mid) are appropriately named and self-documenting, but there\'s no explanation of parameters, return value, or preconditions (array must be sorted).',
+                  strengths: [
+                    'Descriptive variable names: low, high, mid, target',
+                    'Function name "binarySearch" clearly describes purpose'
+                  ],
+                  improvements: [
+                    'Add docstring: @param {number[]} arr - Sorted array to search',
+                    'Document return value: @returns {number} Index of target, or -1 if not found',
+                    'Add precondition note: Array must be sorted in ascending order',
+                    'Consider adding inline comment explaining the >>> operator for future readers'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Time Complexity Analysis',
+              criteriaCount: 2,
+              score: 22,
+              maxScore: 25,
+              assessment: 'Accurate complexity identification with good intuitive explanation. The analysis would be stronger with formal mathematical justification using recurrence relations.',
+              criteria: [
+                {
+                  name: 'Complexity Identification',
+                  score: 12,
+                  maxScore: 12,
+                  rationale: 'Correctly identifies O(log n) time complexity. Your explanation that "each comparison eliminates half the remaining elements" captures the key insight. The connection to log₂(n) maximum comparisons is stated correctly.',
+                  strengths: [
+                    'Correctly stated: O(log n) time complexity',
+                    'Accurate: "halves the search space with each iteration"',
+                    'Good: recognized that log₂(1,000,000) ≈ 20 comparisons'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Mathematical Justification',
+                  score: 10,
+                  maxScore: 13,
+                  rationale: 'The intuitive explanation is good but lacks formal rigor. You wrote "it takes log n steps because we keep dividing by 2" - this is true but doesn\'t constitute a proof. Missing: recurrence relation setup, Master Theorem application, or inductive proof.',
+                  strengths: [
+                    'Correct intuition about repeated halving → logarithm',
+                    'Practical example with n = 1,000,000 makes the concept concrete',
+                    'Comparison to O(n) linear search shows understanding of significance'
+                  ],
+                  improvements: [
+                    'Add formal recurrence: T(n) = T(n/2) + O(1)',
+                    'Show solution: After k iterations, search space is n/2^k. When n/2^k = 1, k = log₂(n)',
+                    'Mention best case O(1) when target is at midpoint',
+                    'Note: worst case and average case are both O(log n)'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Test Cases',
+              criteriaCount: 2,
+              score: 19,
+              maxScore: 25,
+              assessment: 'Good coverage of basic cases. Edge cases are partially covered. Consider adding more boundary condition tests.',
+              criteria: [
+                {
+                  name: 'Test Coverage',
+                  score: 11,
+                  maxScore: 15,
+                  rationale: 'Your test suite covers the main scenarios: target found at beginning, middle, and end of array, plus target not found. Missing: empty array test, single-element array, duplicate elements, very large array (to verify no overflow).',
+                  strengths: [
+                    'Tests target at index 0, middle, and last index',
+                    'Includes negative test case (element not in array)',
+                    'Tests arrays of different sizes (5, 10, 100 elements)'
+                  ],
+                  improvements: [
+                    'Add test: binarySearch([], 5) should return -1',
+                    'Add test: binarySearch([42], 42) should return 0',
+                    'Add test with duplicates: what index is returned for [1,2,2,2,3], target=2?',
+                    'Add stress test with array of 10^6 elements to verify O(log n) performance'
+                  ]
+                },
+                {
+                  name: 'Test Quality',
+                  score: 8,
+                  maxScore: 10,
+                  rationale: 'Tests are structured with clear expected vs actual comparisons. The assertEquals pattern (lines 45-52) is good. Test names like "testTargetAtStart" are descriptive. Minor: no tests for invalid inputs (null array, non-integer target).',
+                  strengths: [
+                    'Clear test method names describing what is being tested',
+                    'Consistent use of assertEquals(expected, actual)',
+                    'Each test focuses on one scenario'
+                  ],
+                  improvements: [
+                    'Add boundary tests for Integer.MIN_VALUE and Integer.MAX_VALUE in array',
+                    'Test behavior with null input (should throw or return -1?)'
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+
+      // ECONOMICS - High School and University only
       economics: {
-        questionTitle: 'The student correctly solves for market equilibrium and calculates consumer surplus...',
-        criteriaCount: 4,
-        totalScore: 8.5,
-        maxScore: 10.0,
-        overallAssessment: 'Strong understanding of supply and demand equilibrium concepts. The equilibrium calculation is correct, and the consumer surplus formula is properly applied.',
-        criterion: {
-          name: 'Equilibrium Analysis',
-          score: 9,
-          maxScore: 10,
-          rationale: 'The student correctly sets Qd equal to Qs and solves for the equilibrium price. The equilibrium quantity is then correctly calculated.',
-          strengths: ['Correct setup of the equilibrium condition.', 'Accurate algebraic manipulation.']
+        highschool: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 84.00,
+            maxScore: 100.00,
+            percentage: 84.0,
+            letterGrade: 'B',
+            feedback: 'Good work, Maya! Your understanding of supply and demand fundamentals is solid. The graphs are well-constructed with clear labels, and your real-world example about gas prices effectively illustrates how external shocks shift the supply curve. One key area to strengthen: you\'re confusing shifts of the curve (caused by external factors) with movements along the curve (caused by price changes). This distinction is crucial - review page 2 where you described the oil price increase as "moving up the supply curve" when it actually shifts the entire curve left.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Supply and Demand Graphs',
+              criteriaCount: 3,
+              score: 42,
+              maxScore: 50,
+              assessment: 'Well-constructed graphs with correct curve orientations. Equilibrium point clearly marked at the intersection. Axes are properly labeled but could include numerical values for precision.',
+              criteria: [
+                {
+                  name: 'Graph Accuracy',
+                  score: 15,
+                  maxScore: 17,
+                  rationale: 'Your supply curve slopes upward (page 1, Figure 1) showing that producers supply more at higher prices - correct! The demand curve slopes downward showing inverse price-quantity relationship. The equilibrium point E is marked at the intersection with dotted lines to both axes.',
+                  strengths: [
+                    'Supply curve has positive slope (correctly shows law of supply)',
+                    'Demand curve has negative slope (correctly shows law of demand)',
+                    'Equilibrium clearly marked with E and dotted lines to P* and Q*',
+                    'Curves are smooth, not jagged or kinked'
+                  ],
+                  improvements: [
+                    'Add numerical scale to axes (e.g., P: $0-$20, Q: 0-100 units)',
+                    'Label the curves themselves as S and D, not just the legend'
+                  ]
+                },
+                {
+                  name: 'Labels & Presentation',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Axes correctly labeled with P (Price) on vertical and Q (Quantity) on horizontal - this follows economic convention. Title "Market for Gasoline" clearly identifies the market being analyzed. Graph is neat and readable.',
+                  strengths: [
+                    'Correct axis orientation: P vertical, Q horizontal',
+                    'Market clearly identified in title',
+                    'Legend provided explaining curve colors',
+                    'Neat, professional presentation'
+                  ],
+                  improvements: [
+                    'Add units to axes: "Price ($/gallon)" and "Quantity (millions of gallons/week)"'
+                  ]
+                },
+                {
+                  name: 'Equilibrium Identification',
+                  score: 13,
+                  maxScore: 18,
+                  rationale: 'You correctly identified that equilibrium occurs where supply equals demand (page 1: "where the two curves cross"). However, you didn\'t explain WHY this is the equilibrium - what happens if price is above or below this point? Understanding the adjustment mechanism is important.',
+                  strengths: [
+                    'Correctly located intersection as equilibrium',
+                    'Identified P* as equilibrium price and Q* as equilibrium quantity'
+                  ],
+                  improvements: [
+                    'Explain surplus: if P > P*, quantity supplied > quantity demanded',
+                    'Explain shortage: if P < P*, quantity demanded > quantity supplied',
+                    'Describe how market forces push price toward P*'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Shifts vs. Movements Analysis',
+              criteriaCount: 3,
+              score: 42,
+              maxScore: 50,
+              assessment: 'Your real-world gas price example is well-chosen and timely. The supply shift analysis is partially correct but conflates shifts with movements. This is the most common mistake in introductory economics - getting this distinction clear will help throughout the course.',
+              criteria: [
+                {
+                  name: 'Shift Identification',
+                  score: 12,
+                  maxScore: 18,
+                  rationale: 'On page 2, you correctly identified that an oil price increase affects the supply of gasoline. However, you wrote "the supply moves up and to the left" - this language is imprecise. The supply CURVE SHIFTS leftward (or upward). The term "moves" typically refers to movement along a stationary curve.',
+                  strengths: [
+                    'Correctly linked oil prices to gasoline supply (input cost relationship)',
+                    'Drew the shifted supply curve S₂ in correct position (left of S₁)',
+                    'New equilibrium E₂ shows higher price and lower quantity - correct!'
+                  ],
+                  improvements: [
+                    'CRITICAL: Use "shift" for the whole curve moving; "movement" for traveling along a fixed curve',
+                    'Revision: "The supply curve shifts leftward because production costs increased"',
+                    'Note: A shift changes equilibrium; a movement IS the response to a new equilibrium'
+                  ]
+                },
+                {
+                  name: 'Real-World Application',
+                  score: 16,
+                  maxScore: 17,
+                  rationale: 'Excellent choice of example! The 2022 gas price surge due to supply chain disruptions is relevant and demonstrates practical understanding. Your connection between crude oil (input) and gasoline (output) shows grasp of supply chain economics.',
+                  strengths: [
+                    'Current, relevant example (2022 gas prices)',
+                    'Correctly identified oil as key input to gasoline production',
+                    'Made the connection: ↑ input costs → ↓ supply (shift left) → ↑ price',
+                    'Mentioned real companies and events (showed research effort)'
+                  ],
+                  improvements: [
+                    'Could also mention demand-side factors (e.g., summer driving season)'
+                  ]
+                },
+                {
+                  name: 'Economic Reasoning',
+                  score: 14,
+                  maxScore: 15,
+                  rationale: 'Your cause-and-effect chain is logical: oil prices rise → production costs rise → suppliers willing to supply less at each price → supply curve shifts left → new equilibrium has higher price, lower quantity. This is the correct analytical framework.',
+                  strengths: [
+                    'Clear cause-and-effect reasoning',
+                    'Correctly predicted direction of price and quantity changes',
+                    'Used ceteris paribus assumption appropriately'
+                  ],
+                  improvements: [
+                    'Could quantify: "If supply decreases by 20%, and demand is inelastic, price might rise by 30%"'
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        university: {
+          pdfUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+          overall: {
+            totalScore: 88.00,
+            maxScore: 100.00,
+            percentage: 88.0,
+            letterGrade: 'B+',
+            feedback: 'Well done, James! Your equilibrium analysis demonstrates strong algebraic skills and solid understanding of market mechanics. The calculation of P* = $8 and Q* = 40 units is correct, and your graphical verification provides good confirmation. Your elasticity calculations are accurate - the price elasticity of demand of -1.5 at equilibrium indicates elastic demand. The main gap is in welfare analysis: you calculated consumer and producer surplus areas but didn\'t interpret their economic significance. Adding that layer of analysis would elevate this from good to excellent work.'
+          },
+          questions: [
+            {
+              id: 1,
+              title: 'Equilibrium Calculation',
+              criteriaCount: 3,
+              score: 47,
+              maxScore: 50,
+              assessment: 'Flawless algebra in finding equilibrium. Given Qd = 100 - 7.5P and Qs = -20 + 7.5P, you correctly solved for P* = $8 and Q* = 40 units. Verification by substitution confirms the answer.',
+              criteria: [
+                {
+                  name: 'Mathematical Setup',
+                  score: 15,
+                  maxScore: 15,
+                  rationale: 'Perfect setup. You correctly stated the equilibrium condition Qd = Qs on page 1, substituted the given functions: 100 - 7.5P = -20 + 7.5P, and rearranged to solve for P. Each algebraic step is shown clearly.',
+                  strengths: [
+                    'Correct equilibrium condition: Qd = Qs',
+                    'Clear substitution of demand and supply functions',
+                    'Step-by-step algebra: 100 + 20 = 7.5P + 7.5P → 120 = 15P → P = 8',
+                    'Back-substitution to find Q*: Q = 100 - 7.5(8) = 40 ✓'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Graphical Verification',
+                  score: 17,
+                  maxScore: 18,
+                  rationale: 'Good supporting graph on page 2. The supply and demand lines are drawn with correct intercepts: demand crosses P-axis at P = 13.33 (when Q = 0) and Q-axis at Q = 100 (when P = 0). Supply crosses Q-axis at Q = -20 (correctly shown as starting from Q = 0 in positive quadrant). Equilibrium point (8, 40) is marked.',
+                  strengths: [
+                    'Intercepts calculated and plotted correctly',
+                    'Equilibrium point (P* = 8, Q* = 40) clearly marked',
+                    'Slopes match the equations: demand slope = -7.5, supply slope = 7.5'
+                  ],
+                  improvements: [
+                    'Extend analysis: shade surplus/shortage regions at other prices'
+                  ]
+                },
+                {
+                  name: 'Solution Verification',
+                  score: 15,
+                  maxScore: 17,
+                  rationale: 'You verified the solution by substituting P = 8 back into both equations and confirming Q = 40 in each. This is good mathematical practice. Could also verify by checking that the signs make economic sense (positive price and quantity).',
+                  strengths: [
+                    'Verified: Qd = 100 - 7.5(8) = 100 - 60 = 40 ✓',
+                    'Verified: Qs = -20 + 7.5(8) = -20 + 60 = 40 ✓',
+                    'Noted that P* and Q* are both positive (economically meaningful)'
+                  ],
+                  improvements: [
+                    'Add: "At P = 8, both buyers and sellers agree on Q = 40, so market clears"'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 2,
+              title: 'Elasticity Analysis',
+              criteriaCount: 2,
+              score: 23,
+              maxScore: 25,
+              assessment: 'Accurate elasticity calculations using the point elasticity formula. The interpretation that demand is elastic at equilibrium (|Ed| = 1.5 > 1) is correct. Good connection to revenue implications.',
+              criteria: [
+                {
+                  name: 'Elasticity Calculation',
+                  score: 12,
+                  maxScore: 12,
+                  rationale: 'Correct application of point elasticity formula: Ed = (dQ/dP) × (P/Q). You identified dQ/dP = -7.5 from the demand function, then calculated Ed = -7.5 × (8/40) = -1.5. The absolute value |Ed| = 1.5 is correctly interpreted as elastic demand.',
+                  strengths: [
+                    'Correct formula: Ed = (dQ/dP) × (P/Q)',
+                    'Correctly identified slope from linear demand: dQ/dP = -7.5',
+                    'Accurate calculation: -7.5 × (8/40) = -7.5 × 0.2 = -1.5',
+                    'Correct interpretation: |Ed| > 1 means elastic demand'
+                  ],
+                  improvements: []
+                },
+                {
+                  name: 'Economic Interpretation',
+                  score: 11,
+                  maxScore: 13,
+                  rationale: 'Good connection between elasticity and firm behavior: you noted that with elastic demand, a price increase would decrease total revenue. This shows practical understanding. Could extend to discuss factors affecting elasticity.',
+                  strengths: [
+                    'Connected Ed = -1.5 to revenue: "price ↑ → total revenue ↓"',
+                    'Mentioned that consumers are price-sensitive at this point',
+                    'Noted that elasticity varies along a linear demand curve'
+                  ],
+                  improvements: [
+                    'Explain WHY demand might be elastic (substitutes available?)',
+                    'Calculate Es (supply elasticity) for comparison',
+                    'Discuss: at what price is Ed = -1 (unit elastic point)?'
+                  ]
+                }
+              ]
+            },
+            {
+              id: 3,
+              title: 'Welfare Analysis',
+              criteriaCount: 2,
+              score: 18,
+              maxScore: 25,
+              assessment: 'Correct calculation of surplus areas but missing economic interpretation. The geometric approach (triangles) is appropriate for linear curves. Total welfare of $480 is correct.',
+              criteria: [
+                {
+                  name: 'Surplus Calculations',
+                  score: 12,
+                  maxScore: 13,
+                  rationale: 'Consumer surplus correctly calculated as triangle area: CS = ½ × base × height = ½ × 40 × (13.33 - 8) = ½ × 40 × 5.33 = $106.67. Producer surplus: PS = ½ × 40 × (8 - 2.67) = ½ × 40 × 5.33 = $106.67. Wait - you got PS = $373.33. Let me check: the supply curve reaches P = 0 at Q = 20, so the price intercept is P = 2.67. Your PS calculation of $373.33 appears to use the wrong height.',
+                  strengths: [
+                    'Correct approach: surplus as triangle area',
+                    'Consumer surplus calculation appears correct: ~$107',
+                    'Showed work with clear geometric reasoning'
+                  ],
+                  improvements: [
+                    'CHECK: Producer surplus height should be (P* - supply intercept) = (8 - 2.67) = 5.33',
+                    'Recalculate: PS = ½ × 40 × 5.33 ≈ $107, not $373',
+                    'Note: with linear S and D of equal slope, CS should equal PS'
+                  ]
+                },
+                {
+                  name: 'Welfare Interpretation',
+                  score: 6,
+                  maxScore: 12,
+                  rationale: 'You calculated the areas but didn\'t explain their economic meaning. Consumer surplus represents the benefit buyers receive from paying less than their maximum willingness to pay. This interpretation was missing from your analysis.',
+                  strengths: [
+                    'Identified that total welfare = CS + PS',
+                    'Recognized that equilibrium maximizes total surplus'
+                  ],
+                  improvements: [
+                    'Define CS: "value to consumers minus what they actually pay"',
+                    'Define PS: "revenue to producers minus their cost of production"',
+                    'Explain: "Any price other than P* creates deadweight loss"',
+                    'Add: "A tax of $t would reduce welfare by approximately ½ × t × ΔQ"'
+                  ]
+                }
+              ]
+            }
+          ]
         }
       }
     };
 
+    // Toggle accordion expand/collapse
+    window.toggleAccordion = function(button) {
+      const accordion = button.closest('.question-accordion');
+      const content = accordion.querySelector('.accordion-content');
+      const chevron = button.querySelector('.accordion-chevron');
+
+      const isExpanded = content.classList.contains('expanded');
+
+      if (isExpanded) {
+        content.classList.remove('expanded');
+        chevron.classList.remove('rotated');
+      } else {
+        content.classList.add('expanded');
+        chevron.classList.add('rotated');
+      }
+    };
+
     function getScoreClass(score, maxScore) {
-      var percent = (score / maxScore) * 100;
+      const percent = (score / maxScore) * 100;
       if (percent >= 80) return 'success';
       if (percent >= 60) return 'warning';
       return 'error';
     }
 
-    function updateGradingPanel(subject) {
-      var data = gradingData[subject];
-      var percent = ((data.totalScore / data.maxScore) * 100).toFixed(1);
-      var scoreClass = getScoreClass(data.totalScore, data.maxScore);
-      var criterionPercent = ((data.criterion.score / data.criterion.maxScore) * 100).toFixed(1);
+    function updateGradingPanel(subject, level) {
+      level = level || 'elementary';
+      const data = gradingData[subject] && gradingData[subject][level] ? gradingData[subject][level] : null;
+      if (!data) return;
 
-      // Update question summary
-      document.querySelector('.question-title').textContent = data.questionTitle;
-      document.querySelector('.criteria-count').textContent = data.criteriaCount + ' criteria';
+      // Update PDF viewer
+      const pdfViewer = document.getElementById('pdf-viewer');
+      if (pdfViewer && data.pdfUrl) {
+        pdfViewer.src = data.pdfUrl;
+      }
 
-      var questionScore = document.querySelector('.question-score');
-      questionScore.textContent = data.totalScore.toFixed(1) + ' / ' + data.maxScore.toFixed(1);
-      questionScore.className = 'score-display ' + scoreClass + ' text-lg';
+      // Update Overall Score section
+      document.querySelector('.overall-total-score').textContent = data.overall.totalScore.toFixed(2);
+      document.querySelector('.overall-percentage').textContent = data.overall.percentage.toFixed(1) + '%';
+      document.querySelector('.overall-letter-grade').textContent = data.overall.letterGrade;
+      document.querySelector('.overall-feedback').value = data.overall.feedback;
 
-      document.querySelector('.question-percent').textContent = percent + '%';
+      // Generate Question Accordions HTML
+      const accordionsContainer = document.getElementById('question-accordions');
+      accordionsContainer.innerHTML = data.questions.map(function(question, qIndex) {
+        const qPercent = ((question.score / question.maxScore) * 100).toFixed(1);
+        const qScoreClass = getScoreClass(question.score, question.maxScore);
 
-      // Update overall assessment
-      document.querySelector('.overall-assessment').textContent = data.overallAssessment;
+        const criteriaHTML = question.criteria.map(function(criterion, cIndex) {
+          const cPercent = ((criterion.score / criterion.maxScore) * 100).toFixed(1);
+          const cScoreClass = getScoreClass(criterion.score, criterion.maxScore);
 
-      // Update criterion card
-      document.querySelector('.criterion-name').textContent = data.criterion.name;
-      document.querySelector('.criterion-score').textContent = data.criterion.score;
-      document.querySelector('.criterion-percent').textContent = criterionPercent + '%';
-      document.querySelector('.criterion-rationale').textContent = data.criterion.rationale;
+          const strengthsHTML = criterion.strengths.map(function(s) {
+            return '<li class="text-sm text-gray-700 flex items-start gap-2">' +
+              '<span class="material-symbols-outlined text-green-600 flex-shrink-0 mt-0.5" style="font-size: 16px;">check_circle</span>' +
+              '<span>' + s + '</span>' +
+            '</li>';
+          }).join('');
 
-      // Update strengths
-      var strengthsHtml = data.criterion.strengths.map(function(strength) {
-        return '<li class="text-sm text-gray-700 flex items-start gap-2">' +
-          '<svg class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">' +
-            '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />' +
-          '</svg>' +
-          '<span>' + strength + '</span>' +
-        '</li>';
+          const improvementsHTML = criterion.improvements.length > 0 ?
+            '<div>' +
+              '<div class="text-xs font-semibold text-amber-700 mb-2">Areas for Improvement:</div>' +
+              '<ul class="space-y-2">' +
+                criterion.improvements.map(function(i) {
+                  return '<li class="text-sm text-gray-700 flex items-start gap-2">' +
+                    '<span class="material-symbols-outlined text-amber-500 flex-shrink-0 mt-0.5" style="font-size: 16px;">warning</span>' +
+                    '<span>' + i + '</span>' +
+                  '</li>';
+                }).join('') +
+              '</ul>' +
+            '</div>' : '';
+
+          return '<div class="criterion-card ' + cScoreClass + '">' +
+            '<div class="flex items-start justify-between mb-3">' +
+              '<div>' +
+                '<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">CRITERION ' + (cIndex + 1) + '</div>' +
+                '<h4 class="font-medium text-gray-900">' + criterion.name + '</h4>' +
+              '</div>' +
+              '<div class="flex items-center gap-2">' +
+                '<div class="flex items-center border border-gray-300 rounded px-2 py-1 bg-white">' +
+                  '<span class="font-semibold text-gray-900">' + criterion.score + '</span>' +
+                  '<span class="text-gray-400 mx-1">/</span>' +
+                  '<span class="text-gray-600">' + criterion.maxScore + '</span>' +
+                '</div>' +
+                '<span class="text-xs text-gray-500">' + cPercent + '%</span>' +
+              '</div>' +
+            '</div>' +
+            '<div class="mb-3">' +
+              '<div class="text-xs font-semibold text-gray-600 mb-1">Rationale:</div>' +
+              '<p class="text-sm text-gray-700 leading-relaxed">' + criterion.rationale + '</p>' +
+            '</div>' +
+            (criterion.strengths.length > 0 ?
+              '<div class="mb-3">' +
+                '<div class="text-xs font-semibold text-green-700 mb-2">Strengths:</div>' +
+                '<ul class="space-y-2">' + strengthsHTML + '</ul>' +
+              '</div>' : '') +
+            improvementsHTML +
+          '</div>';
+        }).join('');
+
+        const isFirstQuestion = qIndex === 0;
+
+        return '<div class="question-accordion bg-white rounded-lg border border-gray-200 overflow-hidden" data-question="' + question.id + '">' +
+          '<button class="accordion-header w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">' +
+            '<div class="flex-1 text-left">' +
+              '<div class="text-xs font-semibold text-gray-500 uppercase tracking-wide">QUESTION ' + question.id + '</div>' +
+              '<p class="text-gray-900 font-medium">' + question.title + '</p>' +
+              '<span class="text-xs text-gray-500">' + question.criteriaCount + ' criteria</span>' +
+            '</div>' +
+            '<div class="flex items-center gap-4">' +
+              '<div class="text-right">' +
+                '<div class="score-display ' + qScoreClass + ' text-lg font-semibold" style="font-variant-numeric: tabular-nums;">' + question.score + ' / ' + question.maxScore + '</div>' +
+                '<div class="text-xs text-gray-500">' + qPercent + '%</div>' +
+              '</div>' +
+              '<span class="material-symbols-outlined accordion-chevron' + (isFirstQuestion ? ' rotated' : '') + '">expand_more</span>' +
+            '</div>' +
+          '</button>' +
+          '<div class="accordion-content' + (isFirstQuestion ? ' expanded' : '') + ' border-t border-gray-200">' +
+            '<div class="p-4 space-y-4">' +
+              '<div class="bg-[#E8F5F4] border border-[#008F85]/20 rounded-lg p-4">' +
+                '<div class="text-sm font-semibold text-[#008F85] mb-2">Overall Question Assessment</div>' +
+                '<div class="relative">' +
+                  '<textarea class="w-full bg-transparent text-sm text-gray-700 leading-relaxed resize-none focus:outline-none" rows="3">' + question.assessment + '</textarea>' +
+                  '<div class="absolute bottom-0 right-0 text-gray-400"><span class="material-symbols-outlined text-sm">edit</span></div>' +
+                '</div>' +
+              '</div>' +
+              '<div class="space-y-3">' + criteriaHTML + '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
       }).join('');
-      document.querySelector('.criterion-strengths').innerHTML = strengthsHtml;
     }
 
+    // Track current education level
+    let currentLevel = 'elementary';
+    const levelTabs = document.querySelectorAll('.level-tab');
+
+    // Show/hide level tabs based on available levels for a subject
+    function updateLevelVisibility(subject) {
+      const subjectData = gradingData[subject];
+      const availableLevels = Object.keys(subjectData);
+
+      levelTabs.forEach(function(tab) {
+        const level = tab.dataset.level;
+        if (availableLevels.includes(level)) {
+          tab.style.display = '';
+        } else {
+          tab.style.display = 'none';
+        }
+      });
+
+      // If current level isn't available, switch to first available
+      if (!availableLevels.includes(currentLevel)) {
+        currentLevel = availableLevels[0];
+        levelTabs.forEach(function(t) { t.classList.remove('active'); });
+        const newActiveTab = document.querySelector('.level-tab[data-level="' + currentLevel + '"]');
+        if (newActiveTab) {
+          newActiveTab.classList.add('active');
+        }
+      }
+
+      return currentLevel;
+    }
+
+    // Level tab click handlers
+    levelTabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        currentLevel = this.dataset.level;
+
+        // Update active level tab
+        levelTabs.forEach(function(t) { t.classList.remove('active'); });
+        this.classList.add('active');
+
+        // Get current subject and update panel
+        const activeSubjectTab = document.querySelector('.subject-tab.active');
+        const subject = activeSubjectTab ? activeSubjectTab.dataset.subject : 'english';
+        updateGradingPanel(subject, currentLevel);
+      });
+    });
+
+    // Subject tab click handlers
     tabs.forEach(function(tab) {
       tab.addEventListener('click', function() {
-        var subject = this.dataset.subject;
+        const subject = this.dataset.subject;
 
         // Update active tab
         tabs.forEach(function(t) { t.classList.remove('active'); });
         this.classList.add('active');
 
-        // Update visible content
-        contents.forEach(function(c) { c.classList.remove('active'); });
-        document.getElementById('content-' + subject).classList.add('active');
-
-        // Update grading panel
-        updateGradingPanel(subject);
+        // Update level visibility and get valid level
+        const level = updateLevelVisibility(subject);
+        updateGradingPanel(subject, level);
       });
     });
+
+    // Initialize with English (shows all levels)
+    updateLevelVisibility('english');
+    updateGradingPanel('english', 'elementary');
   });
 </script>
 
