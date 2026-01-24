@@ -165,9 +165,19 @@ h6 {
 /* Gradebot Review Panel Styles */
 .review-panel {
   background: white;
-  border-radius: 0.75rem;
+  border-radius: 0;
   border: 1px solid #e5e7eb;
   overflow: hidden;
+}
+
+/* Left panel (Submission Document): round left corners only */
+.review-panel.border-r {
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+/* Right panel (Grading Results): round right corners only */
+.review-panel:not(.border-r) {
+  border-radius: 0 0.75rem 0.75rem 0;
 }
 
 .review-panel-header {
@@ -221,7 +231,16 @@ h6 {
 .results-tab.active {
   color: #008F85;
   background: white;
-  border-radius: 0.375rem;
+}
+
+/* First tab (Results): round left corners only, flat right where tabs meet */
+.results-tab:first-child {
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+/* Last tab (Rubric): flat left where tabs meet, round right corners only */
+.results-tab:last-child {
+  border-radius: 0 0.25rem 0.25rem 0 !important;
 }
 
 .score-display {
@@ -239,4 +258,124 @@ h6 {
 
 .score-display.error {
   color: #C04A4A;
+}
+
+/* Question Accordion Styles */
+.question-accordion {
+  transition: box-shadow 0.2s ease;
+}
+
+.question-accordion:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.accordion-header {
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+.accordion-header:focus {
+  outline: none;
+}
+
+.accordion-header:focus-visible {
+  outline: 2px solid #008F85;
+  outline-offset: -2px;
+}
+
+.accordion-chevron {
+  transition: transform 0.15s ease;
+  color: #9ca3af;
+}
+
+.accordion-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.expanded {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Criterion Card Success Variant */
+.criterion-card.success::before {
+  background: #3A8B5A;
+}
+
+/* Education Level Tabs */
+.level-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.level-tab:hover {
+  color: #0f172a;
+}
+
+.level-tab.active {
+  color: #008F85;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Toggle Switch */
+.pricing-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pricing-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.pricing-toggle .slider {
+  width: 3.5rem;
+  height: 1.75rem;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.pricing-toggle .slider::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pricing-toggle input:checked + .slider {
+  background: #006fee;
+}
+
+.pricing-toggle input:checked + .slider::after {
+  transform: translateX(1.75rem);
 }
