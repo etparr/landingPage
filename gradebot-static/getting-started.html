@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Getting Started - Gradebot by Wave AI</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-white text-text-main overflow-x-hidden antialiased selection:bg-wave-cyan selection:text-white">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="/landingPage/" class="flex items-center gap-3">
+        <img src="/blue-logo.png" alt="Gradebot Logo" class="size-12 translate-y-0.5" style="filter: hue-rotate(10deg) saturate(1.2);" />
+        <div class="flex flex-col justify-center leading-none">
+          <span class="text-xl font-bold tracking-tight text-slate-900">Gradebot</span>
+          <span class="text-[10px] font-semibold text-wave-cyan tracking-wider uppercase">by Wave AI</span>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="/landingPage/">Home</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="/landingPage/pricing.html">Pricing</a>
+        <a class="text-sm font-medium text-wave-blue" href="/landingPage/getting-started.html">Getting Started</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">Benchmarks</a>
+        <a class="text-sm font-medium text-slate-600 hover:text-wave-blue transition-colors" href="#">About Us</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:flex h-10 items-center px-4 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors" href="#">
+          Log in
+        </a>
+        <a class="h-10 px-5 bg-wave-blue hover:bg-blue-600 text-white text-sm font-bold rounded-full flex items-center justify-center transition-all shadow-md hover:shadow-lg" href="#">
+          Sign up free
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer for fixed nav -->
+<div class="h-20"></div>
+
+<!-- Hero Section -->
+<section class="relative pt-16 pb-12 overflow-hidden bg-gradient-to-b from-sky-50 to-white">
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-100/50 blur-[100px] rounded-full translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/40 blur-[80px] rounded-full -translate-x-1/3 translate-y-1/4 pointer-events-none"></div>
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <span class="inline-block text-wave-blue font-semibold text-sm tracking-wide uppercase mb-4">Getting Started</span>
+    <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 mb-6">
+      Start Grading in Minutes.
+    </h1>
+    <p class="max-w-2xl mx-auto text-lg text-slate-600 leading-relaxed">
+      From signup to your first graded assignment in under 5 minutes. Follow our step-by-step guide to transform your grading workflow.
+    </p>
+  </div>
+</section>
+
+<!-- Quick Start Steps Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-20 text-center">
+      <h2 class="text-3xl font-bold text-slate-900 mb-4">How Gradebot Works</h2>
+      <p class="text-slate-500">A transparent workflow from submission to insight.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+      <!-- Connecting line (desktop only) -->
+      <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-[2px] bg-slate-200 z-0 border-t border-dashed border-slate-300"></div>
+
+      <!-- Step 1: Upload -->
+      <div class="relative z-10 flex flex-col items-center gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">upload_file</span>
+        </div>
+        <div class="text-center">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 1</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Upload</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Upload assignments and rubrics. Use your own or generate one from course materials.</p>
+        </div>
+      </div>
+
+      <!-- Step 2: Grade -->
+      <div class="relative z-10 flex flex-col items-center gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">auto_fix_high</span>
+        </div>
+        <div class="text-center">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 2</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Grade</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">AI evaluates every submission and documents its reasoning with full transparency.</p>
+        </div>
+      </div>
+
+      <!-- Step 3: Review & Analyze -->
+      <div class="relative z-10 flex flex-col items-center gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">edit_note</span>
+        </div>
+        <div class="text-center">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 3</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Review & Analyze</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Edit scores and feedback inline. Explore trends and learning gaps across your class.</p>
+        </div>
+      </div>
+
+      <!-- Step 4: Export -->
+      <div class="relative z-10 flex flex-col items-center gap-6 group">
+        <div class="size-20 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-wave-blue shadow-md group-hover:-translate-y-1 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl">download</span>
+        </div>
+        <div class="text-center">
+          <span class="text-xs font-bold text-wave-cyan uppercase tracking-wider mb-2 block">Step 4</span>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Export</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Download results or re-run grading as your course evolves.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Tutorial Section -->
+<section class="py-20 bg-surface-subtle border-y border-slate-100">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative rounded-3xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 p-10 md:p-14 overflow-hidden shadow-soft">
+      <!-- Background icon decoration -->
+      <div class="absolute -right-12 -bottom-16 opacity-10 pointer-events-none">
+        <span class="material-symbols-outlined text-[300px] text-wave-blue">play_circle</span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center gap-12 relative z-10">
+        <!-- Video Thumbnail/Player Container -->
+        <div class="flex-1 w-full max-w-[560px]">
+          <div class="relative rounded-2xl bg-slate-900 aspect-video overflow-hidden shadow-2xl group cursor-pointer">
+            <!-- Placeholder image or actual thumbnail -->
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+              <div class="text-center">
+                <div class="size-20 rounded-full bg-wave-blue/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-5xl text-white" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                </div>
+                <p class="text-white/80 text-sm font-medium">Watch the 3-minute tutorial</p>
+              </div>
+            </div>
+            <!-- Browser-style window decoration -->
+            <div class="absolute top-0 left-0 right-0 h-8 bg-slate-800 flex items-center px-3 gap-1.5">
+              <div class="w-2.5 h-2.5 rounded-full bg-slate-600"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-slate-600"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-slate-600"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">See Gradebot in Action</h2>
+          <p class="text-slate-600 mb-6 leading-relaxed">
+            Watch our quick tutorial to see how educators are saving 10+ hours per week with AI-powered grading. Learn how to upload assignments, configure rubrics, and interpret results.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-slate-600">
+              <span class="material-symbols-outlined text-wave-cyan text-xl">schedule</span>
+              <span>3 minutes to watch</span>
+            </li>
+            <li class="flex items-center gap-3 text-slate-600">
+              <span class="material-symbols-outlined text-wave-cyan text-xl">closed_caption</span>
+              <span>Closed captions available</span>
+            </li>
+          </ul>
+          <a href="#" class="inline-flex items-center gap-2 text-wave-blue font-semibold hover:text-blue-600 transition-colors">
+            <span>View all tutorials</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Guides Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Detailed Feature Guides</h2>
+      <p class="text-slate-600 text-lg leading-relaxed">
+        Master every aspect of Gradebot with our comprehensive how-to guides.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Guide 1: Uploading Assignments -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-wave-blue">upload_file</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-wave-blue">
+            <span class="material-symbols-outlined text-2xl">upload_file</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Uploading Assignments</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Learn how to upload PDFs, images, and bulk submissions. Supported formats and file size limits.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 2: Creating Rubrics -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-wave-cyan">checklist</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-cyan-50 flex items-center justify-center mb-6 text-wave-cyan">
+            <span class="material-symbols-outlined text-2xl">checklist</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Creating Rubrics</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Build custom rubrics or use AI to generate criteria from your assignment prompt automatically.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 3: Reviewing Results -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-gradebot-teal">fact_check</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-[#E8F5F4] flex items-center justify-center mb-6 text-gradebot-teal">
+            <span class="material-symbols-outlined text-2xl">fact_check</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Reviewing Results</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Understand AI reasoning, make human overrides, and ensure every grade meets your standards.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 4: Learning Gap Detection -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-wave-blue">monitoring</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-blue-50 flex items-center justify-center mb-6 text-wave-blue">
+            <span class="material-symbols-outlined text-2xl">monitoring</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Learning Gap Detection</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Use analytics to identify where students struggle and which concepts need reinforcement.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 5: Exporting & Sharing -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-wave-cyan">download</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-cyan-50 flex items-center justify-center mb-6 text-wave-cyan">
+            <span class="material-symbols-outlined text-2xl">download</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Exporting & Sharing</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Export grades to CSV, PDF reports, or sync directly back to your learning management system.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Guide 6: Account & Settings -->
+      <a href="#" class="group relative bg-white border border-slate-200 rounded-2xl p-8 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+          <span class="material-symbols-outlined text-[100px] text-gradebot-teal">settings</span>
+        </div>
+        <div class="relative z-10">
+          <div class="size-12 rounded-xl bg-[#E8F5F4] flex items-center justify-center mb-6 text-gradebot-teal">
+            <span class="material-symbols-outlined text-2xl">settings</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Account & Settings</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Manage your subscription, update preferences, and configure notification settings.
+          </p>
+          <span class="text-wave-blue font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LMS Integration Section -->
+<section class="py-24 bg-surface-subtle border-y border-slate-100">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Connect Your LMS</h2>
+      <p class="text-slate-600 text-lg leading-relaxed">
+        Seamlessly integrate Gradebot with your existing learning management system for automatic grade sync.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Canvas Integration Card -->
+      <div class="group relative bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="flex flex-col h-full">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="size-14 rounded-2xl bg-red-50 flex items-center justify-center">
+              <span class="text-2xl font-bold text-red-600">C</span>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900">Canvas</h3>
+              <span class="text-sm text-slate-500">by Instructure</span>
+            </div>
+          </div>
+          <p class="text-slate-600 mb-8 leading-relaxed flex-grow">
+            Connect your Canvas courses to automatically import assignments and export grades. Works with Canvas LTI 1.3.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Auto-import student submissions</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Sync grades back to gradebook</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Roster and course sync</span>
+            </div>
+          </div>
+          <a href="#" class="w-full block text-center bg-white border border-slate-200 text-slate-700 font-semibold py-3 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all">
+            View Canvas Setup Guide
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Classroom Integration Card -->
+      <div class="group relative bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="flex flex-col h-full">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="size-14 rounded-2xl bg-green-50 flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl text-green-600">school</span>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900">Google Classroom</h3>
+              <span class="text-sm text-slate-500">by Google</span>
+            </div>
+          </div>
+          <p class="text-slate-600 mb-8 leading-relaxed flex-grow">
+            Connect with Google Classroom to pull assignments and push grades directly. Works with Google Workspace for Education.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">One-click Google Sign-In</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Import from Google Drive</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Return grades as private comments</span>
+            </div>
+          </div>
+          <a href="#" class="w-full block text-center bg-white border border-slate-200 text-slate-700 font-semibold py-3 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all">
+            View Google Classroom Guide
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional integrations note -->
+    <div class="mt-12 text-center">
+      <p class="text-slate-500 text-sm">
+        Looking for another LMS?
+        <a href="#" class="text-wave-blue hover:text-blue-600 font-medium">Contact us</a>
+        about Blackboard, Moodle, and other integrations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Common Questions</h2>
+      <p class="text-slate-600 text-lg">Quick answers to help you get started faster.</p>
+    </div>
+
+    <div class="space-y-6">
+      <!-- FAQ 1 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">upload_file</span>
+          What file formats can I upload?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          Gradebot accepts PDF files, images (PNG, JPG, HEIC), and Word documents (.docx). For code assignments, you can upload plain text files or use our LMS integration to pull submissions directly.
+        </p>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">schedule</span>
+          How long does grading take?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          Gradebot grades all submissions in parallel. Whether you have 5 essays or 300, your entire batch completes in 30 seconds to 2 minutes.
+        </p>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">edit</span>
+          Can I edit the AI-generated grades?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          Absolutely. Click any score to adjust it, edit feedback inline, or rewrite comments entirely. Your expertise stays in the loop—Gradebot handles the heavy lifting while you keep full control.
+        </p>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">checklist</span>
+          Do I need to create a rubric from scratch?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          No. You can upload an existing rubric or let Gradebot generate one automatically from your assignment prompt. The AI will suggest criteria and point values that you can then customize.
+        </p>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">security</span>
+          Is student data secure?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          Yes. Gradebot is FERPA compliant. Student submissions are encrypted, never used to train AI models, and can be deleted at any time. We do not share data with third parties.
+        </p>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
+        <h3 class="text-lg font-semibold text-slate-900 flex items-center gap-3">
+          <span class="material-symbols-outlined text-wave-blue">support</span>
+          Where can I get help?
+        </h3>
+        <p class="mt-3 text-slate-600 leading-relaxed pl-9">
+          Pro users get priority email support. Enterprise and district customers have a dedicated success manager for onboarding, training, and ongoing support.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-surface-subtle border-t border-slate-200">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Ready to Start Grading Smarter?</h2>
+    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+      Join thousands of educators who have reclaimed their evenings. Sign up in 30 seconds.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+      <a class="h-14 px-10 bg-wave-blue hover:bg-blue-600 text-white text-lg font-bold rounded-full flex items-center justify-center transition-all shadow-lg hover:shadow-xl shadow-blue-500/25" href="#">
+        Sign up for free
+      </a>
+      <a class="h-14 px-10 bg-white border border-slate-200 hover:border-slate-400 text-slate-800 text-lg font-bold rounded-full flex items-center justify-center transition-all shadow-sm hover:shadow-md" href="#">
+        Schedule a Demo
+      </a>
+    </div>
+    <p class="text-sm text-slate-500 flex items-center justify-center gap-6">
+      <span class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-green-500 text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        50 free submissions
+      </span>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-16">
+      <div class="col-span-2 lg:col-span-2">
+        <div class="flex items-center gap-2 mb-6">
+          <img src="/blue-logo.png" alt="Gradebot Logo" class="size-8" style="filter: brightness(0) invert(1);" />
+          <span class="text-xl font-bold">Gradebot</span>
+        </div>
+        <p class="text-slate-400 text-sm max-w-xs mb-8 leading-relaxed">
+          The AI-powered grading assistant that gives teachers superpowers. Accurate, secure, and insightful.
+        </p>
+        <div class="flex gap-5">
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+          <a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Product</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Features</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Integrations</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="/landingPage/pricing.html">Pricing</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Company</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">About Us</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Careers</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Blog</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-wider">Legal</h4>
+        <ul class="flex flex-col gap-3 text-sm text-slate-400">
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">FERPA Statement</a></li>
+          <li><a class="hover:text-wave-cyan transition-colors" href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500 text-sm">© 2024 Wave AI Inc. All rights reserved.</p>
+      <div class="flex gap-6 text-sm text-slate-500">
+        <span>Made for teachers with love</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
