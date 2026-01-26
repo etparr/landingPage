@@ -78,7 +78,7 @@
     </div>
 
     <!-- Pricing Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start pt-4">
       <!-- Individual Plan -->
       <div class="relative flex flex-col p-8 bg-white rounded-2xl border border-slate-200 shadow-soft hover:shadow-xl transition-all duration-300">
         <div class="mb-6">
@@ -152,40 +152,93 @@
         </a>
       </div>
 
-      <!-- Institution Plan -->
-      <div class="relative flex flex-col p-8 bg-white rounded-2xl border border-slate-200 shadow-soft hover:shadow-xl transition-all duration-300">
+      <!-- Department Plan -->
+      <div class="relative flex flex-col p-8 bg-white rounded-2xl border-2 border-wave-cyan shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <span class="bg-wave-cyan text-white text-xs font-bold uppercase px-4 py-1.5 rounded-full tracking-wide shadow-lg shadow-cyan-500/30">Best Value</span>
+        </div>
         <div class="mb-6">
-          <h3 class="text-xl font-bold text-slate-900">Institution</h3>
-          <p class="text-sm text-slate-500 mt-2">For schools and districts.</p>
+          <h3 class="text-xl font-bold text-slate-900">Department</h3>
+          <p class="text-sm text-slate-500 mt-2">Collaborate across your team.</p>
         </div>
         <div class="mb-8 flex items-baseline">
-          <span class="text-4xl font-extrabold text-slate-900">Custom</span>
+          <span class="text-4xl font-extrabold text-slate-900 dept-price-display">$49</span>
+          <span class="text-slate-500 ml-1">/mo</span>
         </div>
         <ul class="mb-8 space-y-4 flex-1">
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span class="text-sm text-slate-600">All Pro features included</span>
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">All Pro features included</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span class="text-sm text-slate-600">Department-wide analytics</span>
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Up to 10 team seats</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span class="text-sm text-slate-600">SSO & Advanced Security</span>
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Cross-grader calibration reports</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span class="text-sm text-slate-600">Dedicated Success Manager</span>
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Shared rubric library</span>
           </li>
           <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            <span class="text-sm text-slate-600">FERPA & HIPAA Compliance Audit</span>
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Department analytics dashboard</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Bulk assignment import</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-wave-cyan text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-sm text-slate-700 font-medium">Priority live chat support</span>
           </li>
         </ul>
-        <a class="w-full block text-center bg-white border border-slate-200 text-slate-700 font-semibold py-3 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-all" href="#">
-          Contact Sales
+        <a class="w-full block text-center bg-wave-cyan text-white font-semibold py-3 rounded-lg hover:bg-cyan-600 transition-all shadow-lg shadow-cyan-500/30" href="#">
+          Start Department Trial
         </a>
+      </div>
+
+      <!-- Institution Plan -->
+      <div class="institution-card-wrapper shadow-soft hover:shadow-xl transition-all duration-300">
+        <div class="institution-card-inner relative flex flex-col p-8 rounded-2xl">
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span class="bg-slate-800 text-white text-xs font-bold uppercase px-4 py-1.5 rounded-full tracking-wide shadow-lg">Enterprise</span>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-slate-900">Institution</h3>
+            <p class="text-sm text-slate-500 mt-2">For schools and districts.</p>
+          </div>
+          <div class="mb-8 flex items-baseline">
+            <span class="text-4xl font-extrabold text-slate-900">Custom</span>
+          </div>
+          <ul class="mb-8 space-y-4 flex-1">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">All Pro features included</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Department-wide analytics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">SSO & Advanced Security</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">Dedicated Success Manager</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-green-500 text-xl mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span class="text-sm text-slate-600">FERPA & HIPAA Compliance Audit</span>
+            </li>
+          </ul>
+          <a class="w-full block text-center bg-slate-800 text-white font-semibold py-3 rounded-lg hover:bg-slate-900 transition-all shadow-lg" href="#">
+            Contact Sales
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -358,15 +411,18 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.getElementById('billing-toggle');
-    var priceDisplay = document.querySelector('.price-display');
+    var proPrice = document.querySelector('.price-display');
+    var deptPrice = document.querySelector('.dept-price-display');
 
     toggle.addEventListener('change', function() {
       if (this.checked) {
         // Annual pricing
-        priceDisplay.textContent = '$19';
+        proPrice.textContent = '$19';
+        deptPrice.textContent = '$49';
       } else {
         // Monthly pricing
-        priceDisplay.textContent = '$29';
+        proPrice.textContent = '$29';
+        deptPrice.textContent = '$69';
       }
     });
   });

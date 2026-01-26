@@ -379,3 +379,15 @@ h6 {
 .pricing-toggle input:checked + .slider::after {
   transform: translateX(1.75rem);
 }
+
+/* Institution (Enterprise) Card Gradient Border */
+.institution-card-wrapper {
+  background: linear-gradient(135deg, #334155, #1e293b, #334155);
+  border-radius: 1rem;
+  padding: 2px;
+}
+
+.institution-card-wrapper > .institution-card-inner {
+  background: white;
+  border-radius: calc(1rem - 2px);
+}
